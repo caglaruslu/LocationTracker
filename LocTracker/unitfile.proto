@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package ProtoFiles;
+option java_package = "com.drivebuddyapp.drivebuddysdk.ProtoFiles";
+option java_outer_classname = "ProtoBuf";
+
+message AccData {
+  double timestamp = 1;
+  float x = 2;
+  float y = 3;
+  float z = 4;
+};
+
+message LocData {
+  double timestamp = 1;
+  float latitude = 2;
+  float longitude = 3;
+  float accuracy = 4;
+  float speed = 5;
+  bool direction = 6;
+  repeated AccData acc_data = 7;
+};
+
+message UnitFile {
+  uint64 driver_id = 1;
+  double start_time = 2;
+  double end_time = 3;
+  repeated LocData loc_data = 4;
+  int32 timezoneoffset = 5;
+};
