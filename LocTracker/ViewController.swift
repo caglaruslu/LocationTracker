@@ -18,6 +18,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var unitFile = ProtoFiles_UnitFile()
     
+    var containerURL = "https://drivebuddy.blob.core.windows.net/testere?spr=https&sr=c&sp=rwdl&sv=2017-07-29&sig=46YvUTugp6ah8JSTmqPHuC19sZkYTyIop43VOBsOGxU%3D&se=2018-09-27T10%3A36%3A46Z"
+    
+    var blobs = [AZSCloudBlob]()
+    var container : AZSCloudBlobContainer
+    var continuationToken : AZSContinuationToken?
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        var error: NSError?
+        self.container = AZSCloudBlobContainer(url: URL(string: containerURL)!, error: &error)
+        if ((error) != nil) {
+            print("Error in creating blob container object.  Error code = %ld, error domain = %@, error userinfo = %@", error!.code, error!.domain, error!.userInfo);
+        }
+        
+        
+        self.continuationToken = nil
+        
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +55,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
             return
         }
+        
+        reloadBlobList()
+        
     }
     
     
@@ -53,14 +77,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func beginLocationTracking(){
+        unitFile = ProtoFiles_UnitFile()
         startReceivingLocationChanges()
     }
     
     func stopLocationTracking(){
         locationManager.stopUpdatingLocation()
         setUnitFile()
-        print(unitFile)
+        
+        saveDataToDisc {
+            self.sendDataToServer()
+        }
+        
     }
+    
     
     func startReceivingLocationChanges() {
         let authorizationStatus = CLLocationManager.authorizationStatus()
@@ -129,6 +159,61 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let intGMT = Int32(gmt)!
         return intGMT
     }
+    
+    func sendDataToServer(){
+        
+        let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+        blob.upload(fromText: "deneme") { (err) in
+            if err != nil{
+                print(err!.localizedDescription)
+            }else{
+                print("UPLOADED")
+            }
+            
+        }
+        
+    }
+    
+    
+    func reloadBlobList() {
+        
+        print("container name " + container.name)
+        
+        container.listBlobsSegmented(with: nil, prefix: nil, useFlatBlobListing: false, blobListingDetails: AZSBlobListingDetails(), maxResults: 50) { (error : Error?, results : AZSBlobResultSegment?) -> Void in
+            
+            if error != nil {
+                print("2   " + error!.localizedDescription)
+            }else{
+                self.blobs = [AZSCloudBlob]()
+                
+                
+                for blob in results!.blobs!
+                {
+                    self.blobs.append(blob as! AZSCloudBlob)
+                    let newBlob: AZSCloudBlob = blob as! AZSCloudBlob
+                    print(newBlob.blobName)
+                    print("counter: " + "\(self.blobs.count)")
+                }
+                
+                self.continuationToken = results!.continuationToken
+            }
+            
+            
+            
+        }
+    }
+    
+    
+    func saveDataToDisc(completion: () -> ()){
+        
+        // data saving process
+        
+        // data saved
+        
+        completion()
+        
+    }
+    
     
 }
 

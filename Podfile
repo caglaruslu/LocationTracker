@@ -7,4 +7,5 @@ target 'LocTracker' do
 
   # Pods for LocTracker
   pod 'SwiftProtobuf', '~> 1.0'
+  pod 'AZSClient'
 end

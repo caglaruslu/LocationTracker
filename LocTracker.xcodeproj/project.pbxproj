@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		369B20315BC945E854AEEC70 /* Pods-LocTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocTracker/Pods-LocTracker.release.xcconfig"; sourceTree = "<group>"; };
 		96D0AF3A3C9F5BBAA80FC374 /* Pods-LocTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocTracker/Pods-LocTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A1AB5C3D215BCEFC00E3A58A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A1C94EBE215A664300D0DD38 /* LocTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C94EC1215A664300D0DD38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C94EC3215A664300D0DD38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 				A1C94EC8215A664500D0DD38 /* Assets.xcassets */,
 				A1C94ECA215A664500D0DD38 /* LaunchScreen.storyboard */,
 				A1C94ECD215A664500D0DD38 /* Info.plist */,
+				A1AB5C3D215BCEFC00E3A58A /* Bridging-Header.h */,
 			);
 			path = LocTracker;
 			sourceTree = "<group>";
@@ -201,10 +203,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LocTracker/Pods-LocTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AZSClient/AZSClient.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZSClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caglaruslu.LocTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LocTracker/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caglaruslu.LocTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LocTracker/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

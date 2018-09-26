@@ -7,221 +7,602 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002CF2C40895A816649A2917056C803A /* JSONEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A498BB742847818427C690E88D7D3 /* JSONEncodingError.swift */; };
-		02EFBA80F94C6FBE921B41AC03DC7DAF /* struct.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE097A5FB576C441C6DD90A0C43C52 /* struct.pb.swift */; };
-		06B02F3CA5641C17F9A9FD77177A1D7D /* JSONMapEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A98428E6D2562F6839870ECF0D17893 /* JSONMapEncodingVisitor.swift */; };
-		0AF4B2F525E74C943A0E12617B03DA0A /* ExtensionFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA266A3849D4BE1C68BBF6D50C1EF996 /* ExtensionFields.swift */; };
-		0F3CC18E908628FA0A6ECC7A21B23E23 /* DoubleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2ED58755B7561747769B6EFBB0C1A8 /* DoubleFormatter.swift */; };
-		166597BE1645CC7221D79EE843425C4F /* BinaryDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CF108C35315C6CA0773607A935EB5 /* BinaryDecodingError.swift */; };
-		1762DDD303C1CC31011EE5339503318A /* CustomJSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA7D158DF5EE2D169B6354C6336459 /* CustomJSONCodable.swift */; };
-		190B5866AA784BC3555DCCC1C9CE3902 /* any.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12929F36A9D850C991F643EB7DC2966 /* any.pb.swift */; };
-		1A6235D42763B9DE900018013A285FC6 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD287B6C149B86A940E9144A940C8B9 /* Google_Protobuf_Wrappers+Extensions.swift */; };
-		1AD29442CC206CF60F2E5FE710D7F683 /* JSONScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52CEA1D89267B77A2141820CF458F3 /* JSONScanner.swift */; };
-		1B2F944E7A7A4024C1268F0FA8D326E1 /* Pods-LocTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5795D4223E895A372E12A0236B92E9E6 /* Pods-LocTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E784C67607B92A1A8BFDC9AF35C26E8 /* duration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BE6A9573A96C51D549F3FE332215 /* duration.pb.swift */; };
-		21A55D49FC5B588940C54717B391FE9F /* timestamp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686F1C099B10156699A15E6342D41C84 /* timestamp.pb.swift */; };
-		238B0DB53E8A3538284CF1ACDD351214 /* source_context.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC3A43F05184052F659424FA6895C1E /* source_context.pb.swift */; };
-		262CA7F71948C8EF3D3445DE16447BB4 /* field_mask.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05B699601628EE3121508848FC4B1E /* field_mask.pb.swift */; };
-		266F977071885F2DD283A7E18ADD71E3 /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0647B74CDBB9721249286D9090B0482 /* MessageExtension.swift */; };
-		27D844872ABDD7EAD841EB3CAE7D0129 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A9C96732A3EFEB72657D40B4E247 /* Internal.swift */; };
-		3597A40C1AA846591B709ECD6EC1E261 /* SelectiveVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAD2EA2EF1E34937A64519C065DA44 /* SelectiveVisitor.swift */; };
-		37D5F2E1E8B9DDECBE9D1E1CDBDB5D62 /* api.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36C9AB1A4A5231CCA683361911650 /* api.pb.swift */; };
-		3BDC2A270E1CA57139B59718B7C00FB2 /* HashVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5190DED648319A943137121851AB93 /* HashVisitor.swift */; };
-		3C7369214F7A1926687872B5FBD64556 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D3032EE6C60853F682F74992F81B3 /* wrappers.pb.swift */; };
-		3EA4BA69A2C2162C4B778BE3A6F31237 /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB11A1737E090E2A8B0C872BDD37878 /* BinaryDecoder.swift */; };
-		43A7F9DDE7F942DDDCC2D127D0A256E5 /* AnyUnpackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4430B8C562685E60627D078E9413D3 /* AnyUnpackError.swift */; };
-		4758593762AB57393DE6532660162A6D /* TextFormatEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D240C46827006572084346F0ACB8D9E /* TextFormatEncoder.swift */; };
-		4D7F266AA5334E21EE68AE0DC7251047 /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445862B461563632D9E4791B20C64258 /* Varint.swift */; };
-		4DBE24F17A019EE0110E1082046E313D /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BD4E7DC558DE16D2818C7D0EE0EBD /* SwiftProtobuf-dummy.m */; };
-		4E02027C2635A1DB072AB75131BB2317 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5AC29A386C11D9E89349D6C9F10D5 /* Enum.swift */; };
-		51A74B760E2D14272B4C230DE71FA8D6 /* Message+AnyAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D259862511A8264752A4C7AEC7416 /* Message+AnyAdditions.swift */; };
-		54A7D5C94023A715FC86D8C0A75DBEE9 /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BED06FC70F5416459DDA69693A491E /* ZigZag.swift */; };
-		54E3F5EC927B3A2614E517CC565A0268 /* JSONDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB35CE8DCCD8777B491C6BACCCE882 /* JSONDecodingError.swift */; };
-		573916AD36199A7A1E5E244EFFBE4175 /* BinaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1FF9F933314527C4B0506F3F8CE4E /* BinaryEncoder.swift */; };
-		5B1E842CAEFF2EC4618593C66D483380 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171C1672C6849ED058CED91FCD7BBF4 /* Decoder.swift */; };
-		5B2F6587463DE6F91666330C0E244A24 /* JSONDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7DDAC1402ABBA6ACB368D01631F8B /* JSONDecodingOptions.swift */; };
-		64A2EA180A83381B48DA611C25624BF3 /* Message+JSONArrayAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44189DEC94C411862D9C0E8537CE77 /* Message+JSONArrayAdditions.swift */; };
-		66BAEB37F6F8BAAFFC6206191DFBFF1C /* ProtobufMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5D401962FC97C621CA0D3124152AB /* ProtobufMap.swift */; };
-		6C133D0D3CBCE4ECB77D5F843AC7E21F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6F1D570A560E08895B2C3C940EE0AE28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		788987DE27C371F3976DBDBC76BFD54D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD83FDE95BCD32D1D89467CD7D8AFED /* Version.swift */; };
-		7B6AEAB747EE317572E562D4C902F7B0 /* BinaryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1B72BAE4DB6FC3969C80DABA28EB6 /* BinaryDecodingOptions.swift */; };
-		8109FBEE035815954C207CC6D1E689FC /* FieldTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2982DA2280530A26246FCD195A9E424 /* FieldTypes.swift */; };
-		8A001C0056E31D0DDEF2B2D60C208892 /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495620ABC52EFF89988A1AC737169857 /* WireFormat.swift */; };
-		8AA28E33BB2201BB94107C6AA127C726 /* Google_Protobuf_FieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB910BF4E88A42AD3A3441D1838778A /* Google_Protobuf_FieldMask+Extensions.swift */; };
-		8EA6609A5529F6FC100BE2A0755E149D /* BinaryEncodingSizeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15960ABEAD39DD42778BECECE4E9F8AE /* BinaryEncodingSizeVisitor.swift */; };
-		91C1FB29AFAFBB18452822CDAD2669BF /* BinaryEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12DAAACC6157F69D680F8EF5DCC1D0 /* BinaryEncodingVisitor.swift */; };
-		929D6F8591AF492BF06F26D8AE1C6D7A /* Message+BinaryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3DE0984AD344D4DE92A9CF4FB17E05 /* Message+BinaryAdditions.swift */; };
-		94564A7A153607C124A8811219064486 /* ExtensibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8923218EDC134E8881D7C4FAD53B49 /* ExtensibleMessage.swift */; };
-		A0E6E786B0449C0AD6A926688E6307EB /* Google_Protobuf_Struct+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D44171912093AB4043A7083C73674 /* Google_Protobuf_Struct+Extensions.swift */; };
-		A6D4ACD5F4BB3B56948FCD0B7481DFDD /* SimpleExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213C6347ACDA7C240375B431C065AF3 /* SimpleExtensionMap.swift */; };
-		A6EC9858279B09657B87E81E5C9452BF /* JSONIntegerConverting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4226F399575C85DB2596B510F5CC076 /* JSONIntegerConverting.swift */; };
-		AA0B8AEACC239879B89A255C79EF85C4 /* ProtobufAPIVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F78151C7E5A90CDBEF2999D13EC06 /* ProtobufAPIVersionCheck.swift */; };
-		AC3B35BA32A6D7295B9BF258469678A9 /* Message+TextFormatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF618247022F463C6D3CB688CBEE1790 /* Message+TextFormatAdditions.swift */; };
-		AD1F836E4041C9BE5214871C68F935C6 /* empty.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1CD08FA7EB9667C488AD9D444EA5C /* empty.pb.swift */; };
-		AD7FBB077A43009921C26AE13ED54C19 /* AnyMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833DB30856ADCE8CF6654DCB44608C6 /* AnyMessageStorage.swift */; };
-		ADA147E007C3EA48994A45592FB306AC /* type.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCCF4A1EC824FB48BA2A12E14B6C87 /* type.pb.swift */; };
-		B1D44C580F916B0AA9E9DABC0E79FC3D /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7E0016A5C3A01CC7B19ABF4798BE71 /* Visitor.swift */; };
-		B742634E0D565F67027891720E9797B4 /* Message+JSONAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84BB078CE6506CA4B3E5E9EA7630DD /* Message+JSONAdditions.swift */; };
-		B8324029399FFBB383C76112E72A0A0E /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDF4016FC6E2513DE0BCCBCC4652E2 /* ProtoNameProviding.swift */; };
-		BAD20191D201E76184CD7CCD68A78A8E /* Google_Protobuf_Timestamp+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3550ED575B2F527FB92813D6798408E /* Google_Protobuf_Timestamp+Extensions.swift */; };
-		C18D410D7A94095805F8B8DCB4582721 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853401192AFE3AFD4EB8B4F13FAF6466 /* JSONEncoder.swift */; };
-		C2792F7146952BA6C7A9EB42AFD1E4D7 /* BinaryEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8432F2F2681AC22690FCB3A72AD336 /* BinaryEncodingError.swift */; };
-		C50446CAAA8A3BFD78B3FB70172BE018 /* Google_Protobuf_Duration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8B9C522A8C11C91FDA7A539176D1D7 /* Google_Protobuf_Duration+Extensions.swift */; };
-		CB5E8228D6BACDF6524E82775D1E0F2D /* TextFormatDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134286FEF5035525147275A845E8E2AB /* TextFormatDecoder.swift */; };
-		CBF2AFA338C1042B817319E2131A3854 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D94AFE3942F7187443E9056767655 /* TimeUtils.swift */; };
-		CD3E14355C6C8FC3A8E2E88A59A0FBAE /* NameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA73967D23D308FBAABBE9EB94011EC /* NameMap.swift */; };
-		CFF99F8A83E99B3EBF6392AFABB63B95 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF896EA6032EFAFA8F86747C705F163 /* Message.swift */; };
-		D9EE4C34D74B51DC1A94A5B3AAF48012 /* FieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D30C6D0BE8871CE17DFE99E921212C /* FieldTag.swift */; };
-		DA024DA9D921F9B3BE2FBB351F88663B /* JSONEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4BB658E61468C57A41FCFF935094E /* JSONEncodingVisitor.swift */; };
-		DA791E098F1FE63E74DB3EB4640134BF /* TextFormatScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081EC1D781A37A89A13E598A870C53F /* TextFormatScanner.swift */; };
-		DBE05751EC3DE7B63BB390077494DE60 /* Google_Protobuf_Any+Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6C346D7959C1A6ECE4EDBA973D5EC2 /* Google_Protobuf_Any+Registry.swift */; };
-		DE9389CD5C39B12F87D9150BB1B424F7 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D242142560AE57C5E74D3DC3C9028F /* JSONDecoder.swift */; };
-		DF5D34FF022C28AAF9FD2AF449E78C56 /* Google_Protobuf_Any+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A20577AD30FAFCBE2B036453431394 /* Google_Protobuf_Any+Extensions.swift */; };
-		E10DBC1148A780A6A0F1ABFF1C4CB263 /* TextFormatEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05432E233EE9DE74CEC9171BE21382E /* TextFormatEncodingVisitor.swift */; };
-		E4D59CFA40018BB6CF880EFCD19DE7ED /* Google_Protobuf_Value+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FC0E643F7DA62600462AE229A7EF1 /* Google_Protobuf_Value+Extensions.swift */; };
-		E68B49095637430A8E27FB823C49FD1D /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EAD16F27901D82A6F65BC1378D8F7E /* MathUtils.swift */; };
-		E7483D13FFF4916F3D740C4D9CA5AB7F /* Google_Protobuf_ListValue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D148557070A4CCA82B24F71341B355D /* Google_Protobuf_ListValue+Extensions.swift */; };
-		EA8C92C69BA489A38C0184E70FA29335 /* Pods-LocTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06736C3DA5F3789218F48194CC0750B4 /* Pods-LocTracker-dummy.m */; };
-		EBA3840E1607355A2E76C0822B510F60 /* SwiftProtobuf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDE5C7C362A9C3235D43BA2B18EF94F /* SwiftProtobuf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBD0280C199E673DB5335DD6EBF8E14D /* ExtensionFieldValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48105E16B047076A1D73BE3EC9FF68C2 /* ExtensionFieldValueSet.swift */; };
-		ED2F530A460D057B1294D22530BD40DE /* TextFormatDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4046D848EC84FE7DD116D405A4601F /* TextFormatDecodingError.swift */; };
-		EDB4B0681DE6DF9336A76F656A86D5AC /* BinaryDelimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A71D02C49CEEAB4AFAFCFF326C6689 /* BinaryDelimited.swift */; };
-		F0D6FFB16B3649A54F0498D66A9340E7 /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684AF982F42802D8269ACE88C9B30D59 /* UnknownStorage.swift */; };
-		F1ED6420156E736DFA442F0B64F43200 /* ExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48C72D790982CA40656ABD669CA6C4 /* ExtensionMap.swift */; };
-		F431DDC3D9ABB8DD0412314E78DBCC69 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60672752AE9B214CAAFEDF8BDB8AA /* StringUtils.swift */; };
+		027E057F62F4E3A311350588A26AECCA /* AZSSharedKeyBlobAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302B7572396BF92CEFE0E0A9EA04C76 /* AZSSharedKeyBlobAuthenticationHandler.m */; };
+		03E20C8F7FADD8F691F2DEC4BA8D0C18 /* AZSNoOpAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B57370B06B9968663177B81B5A9FE /* AZSNoOpAuthenticationHandler.m */; };
+		07FC9D7F80E9B59EA6DB86ADF9474EC7 /* BinaryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965336C862B57B446B5386EB61D4573E /* BinaryDecodingOptions.swift */; };
+		08EC63BA1DA6788F3A0865EDF88709DE /* AZSClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E032CE2A362CCD78287B16A43632C9 /* AZSClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B2B4217A0680A571A1CE2354BF567C1 /* AZSContinuationToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 6616FCE0635B16B1785508FCB6CB47CB /* AZSContinuationToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D06435B32F42381035774D98BA75937 /* AZSCloudAppendBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7EE684C41B9A56C349E92042D9D86B /* AZSCloudAppendBlob.m */; };
+		0E0141B9C0489F28575E7C8FCBAB2D55 /* AZSBlockListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B78043AA7DD7A49C5497D8C2D17E876B /* AZSBlockListItem.m */; };
+		104B35E3DF2C188BBE089C5C532970DC /* AZSBlobOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C5C7FE8B90A6ABFA5B1013E805CEA7 /* AZSBlobOutputStream.m */; };
+		1224C9ECFC2BEA444E30D3206A640CC0 /* AZSRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EEA2A5056AD83248D608668DD9527 /* AZSRequestResult.m */; };
+		13B145EF1046F8A2F20D389BCFE84CCB /* AZSCloudPageBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = DF645C9133833B520F5DF073A0B8C462 /* AZSCloudPageBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1717BED84A9DAF4FD298305F5ED5EDF6 /* AZSBlobProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = E52CB22590700D1D57173486BC198E55 /* AZSBlobProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18896483A0540A2AE77D5458966002A3 /* SwiftProtobuf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5A89151476C6C1F87CAE786A7F34F3F /* SwiftProtobuf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A7BCC6E14C2F6D3A66C12275C4F3AC /* AZSErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A4C5A09078FD35839EBC211969BCD9 /* AZSErrors.m */; };
+		1B08D76ECD5A7FB712FDAEF0E59079C9 /* TextFormatScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE558F1CA6CD8A69A23879F6FCBA88 /* TextFormatScanner.swift */; };
+		1C632ACCD4DE0FB6FF44213313753B8B /* AnyUnpackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E1A59C483F2E483F848339B4E7AD98 /* AnyUnpackError.swift */; };
+		1E8BD21C7482E8D05F0035C5B9A3E005 /* AZSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B8977CC02BEDFEB6EAB8ED15DF5C6E /* AZSUtil.m */; };
+		20ECFC9C84635F4F4E630A6390561A59 /* AZSCloudStorageAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF11C896CE970ADF4172BE5CE23E555 /* AZSCloudStorageAccount.m */; };
+		2226904FE7FF52038B20C0C6477DC6AB /* Pods-LocTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5795D4223E895A372E12A0236B92E9E6 /* Pods-LocTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2422A26CB352CFB9C3AE86E3DA7ACC91 /* Google_Protobuf_Timestamp+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7B8C0395D0040CAF2F3598DD5640B /* Google_Protobuf_Timestamp+Extensions.swift */; };
+		25223B34719E8EBCB3D7293AA2865446 /* ExtensionFieldValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E91799D98BBB58875065AC87A82CD9 /* ExtensionFieldValueSet.swift */; };
+		25230301451E4DC5296AAE371C6A5C8C /* AZSRetryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E24F277211FE6B88440A1EA49B10226A /* AZSRetryInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274AB669D23F9742A55FD1E8B621644E /* AZSResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BA05825A7ADFEC8193DEAD2D416E180B /* AZSResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		282E63764B2ED49E72296317B5515811 /* AZSCorsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8800F66818BB449CAB38AD3F949537 /* AZSCorsRule.m */; };
+		28517434ED5A44974DDC04E6858CC356 /* AZSNavigationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 786395D51C5B457B4DE44D21F7E7C2A5 /* AZSNavigationUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28FC690E43D1F47B6DEB1DCEF26B59AF /* AZSBlobResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DEC148DE7D6FD58D01EE8F46F8BB5BF /* AZSBlobResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292029A1991FE7D3C34DEF8A27ECEB61 /* AZSRequestOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1F367AD8354A7AB4793623721B62 /* AZSRequestOptions.m */; };
+		2B636E42353B26323D5BE51891846AC0 /* AZSStorageUri.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE321F7AADD02BC80FB0F585F474A4 /* AZSStorageUri.m */; };
+		2F2163711C3B9C4E8EC5B5658A7DE8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		302C6508C326D9D6E97342ADED792340 /* ProtobufMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B04A3A10AD95FB02C64E0D71C67F721 /* ProtobufMap.swift */; };
+		325DA47B1D439C0FFC0D3F83CFCCE607 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243910E08B78CFFBFC0E100B4CB8380F /* Version.swift */; };
+		339B8846C50C9F60B9E622308FEF3256 /* AZSBlobRequestXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E051848AF0B051DF0F0AFAF5A6241CC /* AZSBlobRequestXML.m */; };
+		343131199EADEC6F8D5940F4C0C30292 /* JSONIntegerConverting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772114D6321E0945670FAC6DA4212C2E /* JSONIntegerConverting.swift */; };
+		355B94FE485DC458D4DF6DFDDCD2649F /* AZSRetryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 980402F855FC4AA855D075E52423DD8C /* AZSRetryInfo.m */; };
+		35661920AC9B0FFDF3D40775DF5C33FC /* Google_Protobuf_Any+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F664F2CEA5C3857B2077230F7716E /* Google_Protobuf_Any+Extensions.swift */; };
+		36667BA9E006EA27579C2D8BA28D73EA /* JSONDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68A76C24A5C4B9D634BEF13EE45B143 /* JSONDecodingError.swift */; };
+		36A7ACE3A3345006D7A3FD3C668CC39B /* Google_Protobuf_FieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDDB37EA27B51D194243E65D442EE3 /* Google_Protobuf_FieldMask+Extensions.swift */; };
+		391A281D4B5ECC475BEA7698896C4587 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634FA12DEC37465CF6747BD2013A248 /* Visitor.swift */; };
+		39FBDE958BA1939F6B96E93F541FC33D /* CustomJSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB9F73D6F281BE4F814C48010C70D1 /* CustomJSONCodable.swift */; };
+		3C7C07CECC3B6638CCDF7797FE1623CD /* AZSSharedAccessPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E50EC25032FDF7F15E5DF9E549A3E227 /* AZSSharedAccessPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7293868BDD2AE5EE7CCAA8849C3EDE /* Message+BinaryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485330B1E8317760F68BE270C08F4D94 /* Message+BinaryAdditions.swift */; };
+		3D7789D7A2A9128E3855129377AEB6AD /* AZSBlobContainerProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B08D923901690EE0F1A2A39BD34DC0 /* AZSBlobContainerProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC44B7738AF5D1159904A61F06FA71B /* SimpleExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5F146199FE8E78C8C298DD10E05CA /* SimpleExtensionMap.swift */; };
+		40DC8A07D3523D8C7940F5E6D70723C3 /* AZSSharedAccessPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF0C0306802A34CF85DD8BBF622650 /* AZSSharedAccessPolicy.m */; };
+		411179808F6BCA635F50D9AC3ACFA903 /* AZSSharedAccessHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7953591BE03D99E2B90C9614EE5BCE /* AZSSharedAccessHeaders.m */; };
+		41529EDA7C7EF6C20C4AFC19187B676D /* AZSCloudBlobContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D9B0F26B51A6A69D6756D48A26FD07 /* AZSCloudBlobContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43242CC7BBCF3D8EFB8BCAFE7BAD34BA /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A907BD9448A8E163F9F297C8C0E892 /* WireFormat.swift */; };
+		4334AD415552A7E035EAB7CF148BA43A /* AZSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2132E6C93EE925E673674AB875164BE8 /* AZSConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4474D0A6FA7846545EE9694AF4250A24 /* any.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5972D472A48BB1463CBB57F236A05 /* any.pb.swift */; };
+		4536742B0245A1CC1245126DD9E50866 /* AZSCloudClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B8042A21DFCB5366801F67EE57BBAD86 /* AZSCloudClient.m */; };
+		457BDCC61A37805C9041565881816E04 /* AZSBlobOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F44E7D95CA56B3EAC4283E9D5812B8 /* AZSBlobOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B78DCAB5EEE1248B376B90DDFA1D7A /* JSONMapEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5C0EB638D4C4A2E713B40DA1E208A /* JSONMapEncodingVisitor.swift */; };
+		46171B299ADF6817DE94F8FF9B2C1E91 /* AZSCopyState.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EC5A4DC0FD22F3B64E18F9ACE8943 /* AZSCopyState.m */; };
+		4C1DB50077CC2C855F6CE5B2084831FD /* AZSCloudBlobContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FA24F0A654DBB9B0A862E34E2E0F23 /* AZSCloudBlobContainer.m */; };
+		4CCF01773DCF9C369C994EAD9A19482E /* AZSCloudBlobDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = B12E6355A597348415D36034A9C5D54A /* AZSCloudBlobDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DAB92B0DD64F7A9091B8765DB91DBA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4F2B7BB976FB1876B17976FD5AEFEC69 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A38DB6D91593CF93FCD487309251521 /* TimeUtils.swift */; };
+		5150BEB1032666E118B5515E84C6B1DF /* AZSRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C19B4DF0C5F2A2A2D53F2C14979582 /* AZSRequestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		521333F07DEA73142EBA4591DABB164C /* Google_Protobuf_ListValue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845FF21A2B31C3FB69999E13587C823 /* Google_Protobuf_ListValue+Extensions.swift */; };
+		5461AF30C721618330205C68C4BC1CD5 /* AZSBlobUploadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 18219C227D4B5ECBA42ACE8E7B110385 /* AZSBlobUploadHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C357703A60923BAC39F54A7AE80A69 /* AZSCloudStorageAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D0CB6237E49949C137E0360EA6226A /* AZSCloudStorageAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558ACB1352EAE749D1336471208293E4 /* AZSCloudAppendBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = AF35F1F1D6CED0DD15B7991609BF44B2 /* AZSCloudAppendBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A930A2DAD6788718D5AF99D1E667B2 /* AZSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 096D32AA8255988FACB38137225F8C4F /* AZSConstants.m */; };
+		5B23B804E921F66453F78745272A5C7A /* AZSSharedAccessSignatureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4858E15F48486FF7F46B2401C05E79BD /* AZSSharedAccessSignatureHelper.m */; };
+		5BD8769423EEA42592D24A46FC79D93D /* AZSClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C436503591B1CC8A1E9EA98B4CC08A05 /* AZSClient-dummy.m */; };
+		5BE37102D0BF0AA505937C2BEB596F18 /* Google_Protobuf_Value+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E5ABD2029D7975411C5828061EB40 /* Google_Protobuf_Value+Extensions.swift */; };
+		5CC68886C9414A34B5FDF8C3879E41C2 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DF927497D56FC700B6AE9A0DC8C821 /* StringUtils.swift */; };
+		5EB15F42243E282350508B6B97FE4055 /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058A0326E2278495F21EF79110469437 /* BinaryDecoder.swift */; };
+		5F21266EE51E8EEECFA2110AB1F78854 /* AZSCorsRule.h in Headers */ = {isa = PBXBuildFile; fileRef = DF64EE70C92CA5CE8F8F972845D6708A /* AZSCorsRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		619A2685E95F605DDC69B1F9BB3D842C /* AZSBlobRequestOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = D085C30E79FCFF2D4651D965F9E77C47 /* AZSBlobRequestOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F719CDCD50DE58290EFFA788002750 /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81C9FAE9796755D63F829BAB6D982C /* UnknownStorage.swift */; };
+		6307F66DA3544BF695DFD036B1AE51DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		636BEC958B5B2E4B15022C782BF7E2B2 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ED1148686C9A9993E80F007119C794 /* Decoder.swift */; };
+		648CFE93C7BD95EA6611E1C6D2E94A45 /* AZSBlobProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6918D59923B311911F3D237EF62AF /* AZSBlobProperties.m */; };
+		656B0EFF2B0657C28CA999F83B468391 /* DoubleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2B87A7A9B7D737FEBCAFF324576CB /* DoubleFormatter.swift */; };
+		66AAC8F29765B5B8A7167D9F0A1D8E7D /* AZSBlobContainerProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A8DBA70CB9E30E403AAEE8F8874216 /* AZSBlobContainerProperties.m */; };
+		6AE67CF92E6AE9DD087604236275327F /* AZSNavigationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 64457AACCBDD4F52F5E3FA3993C1AD42 /* AZSNavigationUtil.m */; };
+		727490021CA24EF20BCBD0E5E2C84B03 /* AZSBlobRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3249D116C855E8512AE547F203676E1C /* AZSBlobRequestFactory.m */; };
+		738C7EF9D235D520118278144915CF2F /* ExtensionFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F64CE97993F3A47E2B3E4047A3F9B /* ExtensionFields.swift */; };
+		73B5179336073F78F0584B3D29B42155 /* Message+JSONAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1C488F56378BED8218C3DC6AB034F /* Message+JSONAdditions.swift */; };
+		7427013F81A943903B6D9F5BADC12523 /* AZSSharedAccessAccountParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF2559C92409689A94FE30370165761 /* AZSSharedAccessAccountParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753D539F26F8B78218F6176759630CB8 /* AZSSharedAccessBlobParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B416D40B724BFB0E52472F9A0B8FDC3 /* AZSSharedAccessBlobParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		761EAF8F4EB4E81CFA40B6B8F752F41F /* AZSUriQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F35EF4650C4F99CDC17F0494E9838079 /* AZSUriQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7645ED3383E7D048941AD66056207108 /* field_mask.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6FB03C1C1B578180A9A5D2B65D84 /* field_mask.pb.swift */; };
+		77BC0D697493DBFBE2C7CECC689C6A6F /* AZSRetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF749CF3B86915CCF6C6A8127CC74B /* AZSRetryPolicy.m */; };
+		78345BC4DAB4952A00D5451931BC3E14 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC26FDD4F6DF5E86BB10A935E65546 /* Enum.swift */; };
+		79596B5B377090AB7310B255F0F469FD /* Message+JSONArrayAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88CA9D3325AE4BBD3094C8EFB5505 /* Message+JSONArrayAdditions.swift */; };
+		79DD83CB69EE662816E47019CC1710D3 /* AZSRetryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 462B819EE691D0FC55A0524F8C606E56 /* AZSRetryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AA88E65DBC625DBB9585A363E5D9EB1 /* AZSCloudBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EE01A778BE1325A669E2E5173FABA9 /* AZSCloudBlob.m */; };
+		7AD718C3D4815CEDF6F8C81799F24E4E /* AZSIPRange.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A68BC10B8D6DD57688997ADFC1B5D6 /* AZSIPRange.m */; };
+		7BE3541814E006C88A68BA2840419B1A /* AZSCloudPageBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = D274AA60932E5F26F6449797A57C2F0F /* AZSCloudPageBlob.m */; };
+		7CC6539BAA788B802ED89DFB38B4AF0E /* source_context.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE35430C7CD207628DC914B2941B24 /* source_context.pb.swift */; };
+		7D2A671A416E47FD40747D4F8B81C15C /* AZSResultSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = D725F56287EAECA93F4CFCA276E081A9 /* AZSResultSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E26A9345395D2BBD73D0D211A18EF83 /* AZSSharedAccessSignatureHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E4640FAC013D16A6D4A62C3270A93A /* AZSSharedAccessSignatureHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FBC69CF50C5F594A963158BFA5DEEE2 /* AZSNoOpAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ACF3B27C8547F5B425B3D72755F3EF /* AZSNoOpAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8044266EBC027564B1D047D011A183C8 /* AZSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E6B6485235B1AD5CE666092BFEC75B /* AZSExecutor.m */; };
+		80A6DB4E6C235A4A2FB3351D3C53D00A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC5299F28A4E21DAAFD2D20EF646F8 /* Message.swift */; };
+		82BAC98A60FC8B2DFA523761D43AE9F9 /* AZSMetricsProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FA288281B13FF3D780740095997C97 /* AZSMetricsProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B57A1660FE077873CA1A30E6F74006 /* Google_Protobuf_Duration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF263CC5566A792758A2BD3774B86F6 /* Google_Protobuf_Duration+Extensions.swift */; };
+		896F19A3A74D1449AB335E4F04836D1C /* AZSContinuationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 08795B0C91C346433D62228E433E5754 /* AZSContinuationToken.m */; };
+		89E181A600B6AB8A12E60BCBA91BF4D2 /* AZSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 03496C5E942B5110852E169E7815C2F0 /* AZSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B635C2FED058EE597DE3C4FA076E4D5 /* BinaryEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91DCD3F4149941BAF34D0336BB540D1 /* BinaryEncodingError.swift */; };
+		8D7EF752266FAD223219C6B29F998C62 /* AZSCloudBlockBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 548281FF0A4EDCAC914ABA2B75701EA9 /* AZSCloudBlockBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FBF91215A02D08530AFFF04A4B40529 /* JSONEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7185876952F73FEFF07008604129C2 /* JSONEncodingError.swift */; };
+		8FFB467069AE6096958B7730C1894DE8 /* AZSIPRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 91CE004689C1B52C0A9EE7AE818AEDA2 /* AZSIPRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90184395DFFA8911DCFAA2E4A7232F69 /* Google_Protobuf_Any+Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F950B85B94513F6E162FEB909ADB6108 /* Google_Protobuf_Any+Registry.swift */; };
+		9068B6C550681D8FDEA81813BDD704AE /* timestamp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803BA7F06D04B2AAB6DAB88E97C8188 /* timestamp.pb.swift */; };
+		91C8025A9D8102E64F4A73CA72AEC136 /* AZSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 01213B7FA28FFDBE8CF09173297BFEA7 /* AZSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D28175767A9C0C8709123891EC8FA6 /* ProtobufAPIVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56743071B0758F2F79AF11FB7BFBF3D1 /* ProtobufAPIVersionCheck.swift */; };
+		9228C2D6F9995A2B9466DA7B9E6C6BA7 /* BinaryDelimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD2EAD249691E08B4BB2A0981C8F4C /* BinaryDelimited.swift */; };
+		927E019CF0A78AB2C0505058A28A8812 /* AZSCloudBlobClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A679AD4222B178EB989200AE6B7EB0 /* AZSCloudBlobClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93460FF8A33A039B3FB3E40A223F6A9C /* AZSRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C75AAA99662E7FEF6B34EE0FC09FDFCE /* AZSRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938D1829492AB3708B4FC4E62FF6A286 /* AZSStorageCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A3A993EA23A183AB8BF4305D4A3ABA /* AZSStorageCommand.m */; };
+		950634D3F01697AD74F7C20C117A88C9 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA8296E6B0641984D3E5DDE14FFC0A /* wrappers.pb.swift */; };
+		96490E486755FED092511283D1E22E0E /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1749AA6055F622D51C74F7EF87525 /* Varint.swift */; };
+		9655FC3E06400372C793E1B7B167A8F6 /* JSONEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6367138EE4D39FE629EC13E695F64 /* JSONEncodingVisitor.swift */; };
+		99F266C699F90B1AE9B9170AB4EAE9B0 /* TextFormatEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61577402D735CF338BB7CDB74CDCCC85 /* TextFormatEncodingVisitor.swift */; };
+		9BD72D6A91FB74EE9739B3CEDA61F1D3 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37588575766198EC2C7A5255887BA055 /* JSONDecoder.swift */; };
+		9E037F26FDA801463F3794057914DA65 /* AZSStorageUri.h in Headers */ = {isa = PBXBuildFile; fileRef = EFADDDDBBBF566749749711EB0D346D3 /* AZSStorageUri.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00E68DC5F4E103AC13939B592B00574 /* TextFormatDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F44FDB468E5D84035E9AEBA165F0F /* TextFormatDecodingError.swift */; };
+		A04D9E5B3B7609AB17F6E5888D306668 /* AZSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BBA249C9C8289CFE96FE4834AB0B48D /* AZSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1705D12C3B0E3683FEEC3EC8D154EC6 /* AZSLoggingProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B32BDCDAE2D8D92386C9A7D869B38F2E /* AZSLoggingProperties.m */; };
+		A2D8F7809D403E05D9A7510BFB225991 /* AZSMetricsProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1276E0DD802C54865DBAE8C7041D09A5 /* AZSMetricsProperties.m */; };
+		A51A797482450BBE8860AAC0157B4C89 /* AZSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CF943CE0957F876A14B6601CDF846F09 /* AZSClient.m */; };
+		A56DE290EFEA18691CE6067CC5D689A8 /* JSONScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C70A5FFDDE8E75105CE97B5AC7219 /* JSONScanner.swift */; };
+		A63AB3153C67531B26E9190CFAD19FA9 /* AZSSharedAccessAccountParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E20F47A2807BE2C526A1AA3C3871F3 /* AZSSharedAccessAccountParameters.m */; };
+		A746111B449139B85FD9FF2626FFDB65 /* Google_Protobuf_Struct+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9FAE15A64CC1B572F57D2164738B6 /* Google_Protobuf_Struct+Extensions.swift */; };
+		A7654ACAFACDA495A547CE7E684FE409 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5681441BBD71C3B85B0D88209CBF2 /* JSONEncoder.swift */; };
+		A7B102DC7CCA97A510D670FA2BEE7E20 /* ExtensibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAAA37DE18BF10D4178E44517159B6 /* ExtensibleMessage.swift */; };
+		AB74C6316F96CDB9BB2FB3A8615E7B8D /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF2313150AB6567691973D4E4BF17C /* Internal.swift */; };
+		AC67357DAC49A588A788ADD1C5052F43 /* Pods-LocTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06736C3DA5F3789218F48194CC0750B4 /* Pods-LocTracker-dummy.m */; };
+		AC7A4C7777E77703833B7248B03A6181 /* duration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CA27DDEA17F9303870253DF68CDEB8 /* duration.pb.swift */; };
+		AC8CFF80C0A08833D39FF17595A8D6CE /* empty.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4869394A7D2D4B0292C32D7AAA60E /* empty.pb.swift */; };
+		AE96F073113DAD62C26932E5EEFBACB6 /* AZSSharedAccessBlobParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A494A95A6EA8311E73C67CD92857B53 /* AZSSharedAccessBlobParameters.m */; };
+		AF14FD4569E2B3E03B03A1CC16AF80BC /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07614FD035DE204E43E045DD1FEA40F /* ProtoNameProviding.swift */; };
+		B0E3DB1229BEEF5B3823CADB1D24EFA5 /* AZSCloudBlockBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 965822EAEAF4DE19C916492FEA2C4C1B /* AZSCloudBlockBlob.m */; };
+		B32AB0623F707A4A763E31D0E072B176 /* type.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01937CD31214966D271ACE33D12CA7 /* type.pb.swift */; };
+		B3353FC6424D63F10A22F5BADCB63226 /* FieldTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DBEDED241C822105109677362C9D5 /* FieldTypes.swift */; };
+		B361D3E01BA02F15DA33BAA4A0B6CB04 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D623A7279742DF9ACCCA75AEC27888 /* SwiftProtobuf-dummy.m */; };
+		B4DCD68C0E7FEC553A50DD8B834B72F6 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746850EE4329ACEE30FCE4F131A521C5 /* Google_Protobuf_Wrappers+Extensions.swift */; };
+		B9CB19D433F1064D43A6F1C29455C82F /* AZSULLRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F40527AA865D2E4FD58F3E374FB4F5F9 /* AZSULLRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA416103C38330DA80CC72433207ECEE /* AZSStorageCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B318AF192F68442A0B5C235BA62AE /* AZSStorageCredentials.m */; };
+		BA69BEC4BD7EE91C360DE92BA46159EC /* Message+AnyAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DBCB6B2C03544B7323FCAE8A9E0BF /* Message+AnyAdditions.swift */; };
+		BBB8993834D0D104A14BD1A5B2EBE4F6 /* AZSEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = C46C6E2EA00082B8D9611518A3A2F741 /* AZSEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA34F63DF8F22B2DE0896A3A42245A4 /* AZSRetryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE37B74350E4B3E74FAB3CA4E1F91F2 /* AZSRetryContext.m */; };
+		BCE1C63A7D8E942BC9055154210198EE /* AZSStorageCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B79D70F27022D283DF90F2E6CBE0F1D /* AZSStorageCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6826DE1AA42F1CEE6E85DC54D5906E /* AZSUriQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F77AD8E801DA24939EC66799BDF33F /* AZSUriQueryBuilder.m */; };
+		C0BA7F2FDA3AA7614FA70FBCF843B26A /* BinaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84AB1AD8E11581A908BA75E0AB1E9F /* BinaryEncoder.swift */; };
+		C0F7A17B540CD6565A7235E7B9F3036F /* AZSBlobRequestOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C63CF80C1C163832806BA5B43F7CAC /* AZSBlobRequestOptions.m */; };
+		C10B6D9A67F69822D600B89218C166D3 /* AZSCloudBlobClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C5C4CE26414FB9353DCC84CD671E2E /* AZSCloudBlobClient.m */; };
+		C3125F5BCFE8BDEB56474DAA51827CDB /* FieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5DF966F49EA09C30E160BD4EF9C9E6 /* FieldTag.swift */; };
+		C431E8F3C0A1F1258C60AF75226E5EDD /* AZSServiceProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 43654857AA9B1891B43F5CBCA8F4C8C6 /* AZSServiceProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59A9912B0BB66D32D67F1ADF4C8C52F /* AZSCloudBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = FF10FD089A3BA1E4B79C0C6EC6DE84A9 /* AZSCloudBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61558644AA43C3DC8AC2CA57BA05452 /* AZSResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 415BF720AE1868A68E04620DEFD9C65E /* AZSResponseParser.m */; };
+		C707F8EDEC538A060652E73686843C5F /* AZSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0540C7310A9D26CAB46AD23D80F77959 /* AZSExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8E583BE0A9E7C75E19EB93AA4C3EB59 /* AZSAccessCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 433B140087324350DFE744EED3929E23 /* AZSAccessCondition.m */; };
+		C939666FD59203A5EDD9F395CEC7D1C0 /* AZSOperationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ADC007D60BEA7A84AB9E971506336D /* AZSOperationContext.m */; };
+		C99125900A909E8B3A17D08C5C64A0B4 /* AZSSharedKeyBlobAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 94065B1010AF03FEE056A351D2FC1DA2 /* AZSSharedKeyBlobAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D9BA5FF7961BACDABF4448F0561D45 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598CC74FE6DFCB8BF9D74EC5061AA90F /* MathUtils.swift */; };
+		CA416550957CDD427D1A13BE3F555AC9 /* TextFormatDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5F65F20C77406BA35A50A7F4E8B48 /* TextFormatDecoder.swift */; };
+		CA8D2292880AB4E73BCAB4FB634F061A /* AZSLoggingProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = E27BA67D7756791C63D814E514604B1A /* AZSLoggingProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAA3DB0020994A28E0705BFFF8A1F73A /* ExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B4A3A0EA7E8C6640E6791207D87FE8 /* ExtensionMap.swift */; };
+		CC56B83894B891CDED477B83D8CF82E1 /* HashVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B30A2F3901115CAE96A411F4B0A2BD /* HashVisitor.swift */; };
+		CD282F17D55D20A2AAF93414099D8446 /* AZSOperationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C26C79EC2CBD1191D26EC630B7303C10 /* AZSOperationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09DA4791A8095836397E53262DC1A82 /* AZSRetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 905A61E0536C83E5A187DA98FAEB8DF6 /* AZSRetryPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D3C47648F94993102571B86848E4CA /* api.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6320F8E0B70EBA8AA06A8B0B6B7CE0E /* api.pb.swift */; };
+		D1372ABBFDE1F53CD9E9AB486DB2730B /* AZSStorageCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC3B1CAF4D245EA09ABAE678A96808F /* AZSStorageCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46439A39AA3CDE8307DF8E216410618 /* AZSBlockListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F0043D39B33E829E58D05ADFB385817C /* AZSBlockListItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D52D83F804EF76E4F9F8FC80CDF8E1F1 /* Message+TextFormatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502D3060431D93FD0FE356CAA6B3DC9 /* Message+TextFormatAdditions.swift */; };
+		D78CC90AFA0FFC3FC5C3560D60BE3BC6 /* AZSServiceProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEBD8C3D75EC8BC1DA8549B154E85D2 /* AZSServiceProperties.m */; };
+		D80019796DCA09D8BD91269FE8668221 /* AZSRequestOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C217BCC35D2123D9181D28D6750604 /* AZSRequestOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDB542AD3D8B237019EFD5434924F8E /* AZSBlobUploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0058C3EDBEC0BB1519ABB9CEA83DF4 /* AZSBlobUploadHelper.m */; };
+		DE96897777F8FDC259FE820533E33590 /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5128F51FA71839329DCFEFC0AB64D /* ZigZag.swift */; };
+		DF456189BECA49AEB3C00AEDB6CB5469 /* AZSBlobRequestXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E2689C96B9551FB2EA0F0EF10728C5 /* AZSBlobRequestXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1F8935EB64A6CAEB3E859B0718DCCCD /* NameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3C9A702CBA4F281C6312B9E46B6D5 /* NameMap.swift */; };
+		E1F9C5779A58FEF92BB2E8A32BFC7599 /* AZSCloudClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E2A1DD5743960DB71BDD0E369A29A8 /* AZSCloudClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28EFCCD068C7E2E3C86194BF956B8B8 /* AZSBlobRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C71204C4C6BAA00B1FDE4D23F1BF82 /* AZSBlobRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33ED0EE131677F1D86299485A73D564 /* AZSCopyState.h in Headers */ = {isa = PBXBuildFile; fileRef = 821AC2BB538DF430539948D86110F67E /* AZSCopyState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6452E410D6CB65634ECAFA9F1DAB079 /* AZSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF9758717D573E93A374AC0D8F7C516 /* AZSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6AD2B76AC554E92FE3EFA4F77600DD9 /* AnyMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C64BA7B32BCE8975C5BE00314BF71 /* AnyMessageStorage.swift */; };
+		E6E0E6C456EFAD63B264AEED0CC08867 /* BinaryEncodingSizeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8104D3A01FB732A3C2749ADD337B2A0 /* BinaryEncodingSizeVisitor.swift */; };
+		E9521319130382FFBE6C574FE828364D /* AZSSharedAccessHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CED25A0F6F5C109B2A6AD3625428F18 /* AZSSharedAccessHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA800EB7A6F40C4BD427D4F3602E8345 /* TextFormatEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F0AED11F4BDEE588742B3141E2AA4 /* TextFormatEncoder.swift */; };
+		EB7534B03B683D7DF58BC43535B756E0 /* AZSResultSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AF313B0DB3C8A8A417C9D443F23C6 /* AZSResultSegment.m */; };
+		ED338444568CDE238CD644A7AF8B9B55 /* AZSCloudBlobDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7066AB802BC17762B7F83BD92F5DE92 /* AZSCloudBlobDirectory.m */; };
+		ED4C01A3864F13C14B56DC8D19453708 /* BinaryDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB7F01C7404E87B7D0CA5E6A5FC804 /* BinaryDecodingError.swift */; };
+		EE6988174881AE68CFCF3DCB0DD0964F /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F44147BC3CEF3CF332FB16953F42E16 /* MessageExtension.swift */; };
+		F4342FDBBB545C7BCFBF77A4816A4F2F /* AZSAccessCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B86BE0C52C6464FF2709D5B9B82C1A7 /* AZSAccessCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F476D125339601EDF3944CA452B3C7C6 /* AZSAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C0A1D0EDFB339A65C027EB2416EE6B /* AZSAuthenticationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F592C55C883E6AD3A33DBF9E3F94EC7F /* JSONDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF70006969980876D09813EB32A1040 /* JSONDecodingOptions.swift */; };
+		F6B4B72D72FB901040F7E8BCAA45D832 /* AZSBlobResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D387C8E9115BBBE3846A7A5120752E5C /* AZSBlobResponseParser.m */; };
+		F7D6A080B0785BBA6E69381A442B5718 /* SelectiveVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6269F41AE46591F9DD3E714DB55563 /* SelectiveVisitor.swift */; };
+		F885F448166D263C11859643B61C30E3 /* AZSRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE271163645FA882C2987FBB4CC0A1A7 /* AZSRequestFactory.m */; };
+		FE45E831DF20BD589008ABBE1AB7850D /* struct.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8903D5DE363DCA7C2DF04E52B7F22 /* struct.pb.swift */; };
+		FF6659439948E021F6A1AD753611EDF2 /* BinaryEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0B0C74728737AE50BD839794DD4FB /* BinaryEncodingVisitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CAD9872B4151DE86958007B24D1DB97A /* PBXContainerItemProxy */ = {
+		0C978942F86B0F418D63523AEAF2DC75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC0E8033208D535FDB87E53C6CACFD4E;
+			remoteGlobalIDString = 7F5150F09A859E62A1003B091A565131;
 			remoteInfo = SwiftProtobuf;
+		};
+		CD6FF4DE0C67D353D7A75607DB8066D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B057C33533B34EC4EA0116CE0025C20A;
+			remoteInfo = AZSClient;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01213B7FA28FFDBE8CF09173297BFEA7 /* AZSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSClient.h"; sourceTree = "<group>"; };
+		03496C5E942B5110852E169E7815C2F0 /* AZSUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSUtil.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUtil.h"; sourceTree = "<group>"; };
+		04C5972D472A48BB1463CBB57F236A05 /* any.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = any.pb.swift; path = Sources/SwiftProtobuf/any.pb.swift; sourceTree = "<group>"; };
 		051EE828F6D1064D3904AB2B28CBF883 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0540C7310A9D26CAB46AD23D80F77959 /* AZSExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSExecutor.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSExecutor.h"; sourceTree = "<group>"; };
+		058A0326E2278495F21EF79110469437 /* BinaryDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecoder.swift; path = Sources/SwiftProtobuf/BinaryDecoder.swift; sourceTree = "<group>"; };
 		06736C3DA5F3789218F48194CC0750B4 /* Pods-LocTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocTracker-dummy.m"; sourceTree = "<group>"; };
-		081D3032EE6C60853F682F74992F81B3 /* wrappers.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrappers.pb.swift; path = Sources/SwiftProtobuf/wrappers.pb.swift; sourceTree = "<group>"; };
-		0A1D44171912093AB4043A7083C73674 /* Google_Protobuf_Struct+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Struct+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Struct+Extensions.swift"; sourceTree = "<group>"; };
-		0CDCCF4A1EC824FB48BA2A12E14B6C87 /* type.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = type.pb.swift; path = Sources/SwiftProtobuf/type.pb.swift; sourceTree = "<group>"; };
-		0D148557070A4CCA82B24F71341B355D /* Google_Protobuf_ListValue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_ListValue+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_ListValue+Extensions.swift"; sourceTree = "<group>"; };
-		123D94AFE3942F7187443E9056767655 /* TimeUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUtils.swift; path = Sources/SwiftProtobuf/TimeUtils.swift; sourceTree = "<group>"; };
-		134286FEF5035525147275A845E8E2AB /* TextFormatDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatDecoder.swift; path = Sources/SwiftProtobuf/TextFormatDecoder.swift; sourceTree = "<group>"; };
-		15960ABEAD39DD42778BECECE4E9F8AE /* BinaryEncodingSizeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingSizeVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingSizeVisitor.swift; sourceTree = "<group>"; };
-		16EAD2EA2EF1E34937A64519C065DA44 /* SelectiveVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectiveVisitor.swift; path = Sources/SwiftProtobuf/SelectiveVisitor.swift; sourceTree = "<group>"; };
-		1BA73967D23D308FBAABBE9EB94011EC /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
-		1ECB35CE8DCCD8777B491C6BACCCE882 /* JSONDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingError.swift; path = Sources/SwiftProtobuf/JSONDecodingError.swift; sourceTree = "<group>"; };
-		22A29678154935338481EA34A17A6379 /* SwiftProtobuf.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftProtobuf.xcconfig; sourceTree = "<group>"; };
-		22C800ECA956EC94B71EE5CB99BB879B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24FA7D158DF5EE2D169B6354C6336459 /* CustomJSONCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomJSONCodable.swift; path = Sources/SwiftProtobuf/CustomJSONCodable.swift; sourceTree = "<group>"; };
-		2F48C72D790982CA40656ABD669CA6C4 /* ExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionMap.swift; path = Sources/SwiftProtobuf/ExtensionMap.swift; sourceTree = "<group>"; };
-		3171C1672C6849ED058CED91FCD7BBF4 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/SwiftProtobuf/Decoder.swift; sourceTree = "<group>"; };
-		34EAD16F27901D82A6F65BC1378D8F7E /* MathUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathUtils.swift; path = Sources/SwiftProtobuf/MathUtils.swift; sourceTree = "<group>"; };
-		3759E81811588E3D54C5D4424502BD85 /* Pods_LocTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocTracker.framework; path = "Pods-LocTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A98428E6D2562F6839870ECF0D17893 /* JSONMapEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMapEncodingVisitor.swift; path = Sources/SwiftProtobuf/JSONMapEncodingVisitor.swift; sourceTree = "<group>"; };
-		3D82BE6A9573A96C51D549F3FE332215 /* duration.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = duration.pb.swift; path = Sources/SwiftProtobuf/duration.pb.swift; sourceTree = "<group>"; };
-		445862B461563632D9E4791B20C64258 /* Varint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Varint.swift; path = Sources/SwiftProtobuf/Varint.swift; sourceTree = "<group>"; };
-		45A20577AD30FAFCBE2B036453431394 /* Google_Protobuf_Any+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Extensions.swift"; sourceTree = "<group>"; };
-		462CF108C35315C6CA0773607A935EB5 /* BinaryDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecodingError.swift; path = Sources/SwiftProtobuf/BinaryDecodingError.swift; sourceTree = "<group>"; };
-		47F5D401962FC97C621CA0D3124152AB /* ProtobufMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufMap.swift; path = Sources/SwiftProtobuf/ProtobufMap.swift; sourceTree = "<group>"; };
-		48105E16B047076A1D73BE3EC9FF68C2 /* ExtensionFieldValueSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionFieldValueSet.swift; path = Sources/SwiftProtobuf/ExtensionFieldValueSet.swift; sourceTree = "<group>"; };
-		48A4BB658E61468C57A41FCFF935094E /* JSONEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingVisitor.swift; path = Sources/SwiftProtobuf/JSONEncodingVisitor.swift; sourceTree = "<group>"; };
-		495620ABC52EFF89988A1AC737169857 /* WireFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WireFormat.swift; path = Sources/SwiftProtobuf/WireFormat.swift; sourceTree = "<group>"; };
-		4D240C46827006572084346F0ACB8D9E /* TextFormatEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncoder.swift; path = Sources/SwiftProtobuf/TextFormatEncoder.swift; sourceTree = "<group>"; };
-		56E36C9AB1A4A5231CCA683361911650 /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
+		08795B0C91C346433D62228E433E5754 /* AZSContinuationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSContinuationToken.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSContinuationToken.m"; sourceTree = "<group>"; };
+		096D32AA8255988FACB38137225F8C4F /* AZSConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSConstants.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSConstants.m"; sourceTree = "<group>"; };
+		09C217BCC35D2123D9181D28D6750604 /* AZSRequestOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestOptions.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestOptions.h"; sourceTree = "<group>"; };
+		0D0058C3EDBEC0BB1519ABB9CEA83DF4 /* AZSBlobUploadHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobUploadHelper.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobUploadHelper.m"; sourceTree = "<group>"; };
+		11F77AD8E801DA24939EC66799BDF33F /* AZSUriQueryBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSUriQueryBuilder.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUriQueryBuilder.m"; sourceTree = "<group>"; };
+		1276E0DD802C54865DBAE8C7041D09A5 /* AZSMetricsProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSMetricsProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMetricsProperties.m"; sourceTree = "<group>"; };
+		18219C227D4B5ECBA42ACE8E7B110385 /* AZSBlobUploadHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobUploadHelper.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobUploadHelper.h"; sourceTree = "<group>"; };
+		1A494A95A6EA8311E73C67CD92857B53 /* AZSSharedAccessBlobParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessBlobParameters.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessBlobParameters.m"; sourceTree = "<group>"; };
+		1E7EEA2A5056AD83248D608668DD9527 /* AZSRequestResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestResult.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestResult.m"; sourceTree = "<group>"; };
+		1FDF0C0306802A34CF85DD8BBF622650 /* AZSSharedAccessPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessPolicy.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessPolicy.m"; sourceTree = "<group>"; };
+		20B5681441BBD71C3B85B0D88209CBF2 /* JSONEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncoder.swift; path = Sources/SwiftProtobuf/JSONEncoder.swift; sourceTree = "<group>"; };
+		2132E6C93EE925E673674AB875164BE8 /* AZSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSConstants.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSConstants.h"; sourceTree = "<group>"; };
+		21FA288281B13FF3D780740095997C97 /* AZSMetricsProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSMetricsProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMetricsProperties.h"; sourceTree = "<group>"; };
+		225F664F2CEA5C3857B2077230F7716E /* Google_Protobuf_Any+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Extensions.swift"; sourceTree = "<group>"; };
+		23A5128F51FA71839329DCFEFC0AB64D /* ZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZigZag.swift; path = Sources/SwiftProtobuf/ZigZag.swift; sourceTree = "<group>"; };
+		23E1A59C483F2E483F848339B4E7AD98 /* AnyUnpackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUnpackError.swift; path = Sources/SwiftProtobuf/AnyUnpackError.swift; sourceTree = "<group>"; };
+		243910E08B78CFFBFC0E100B4CB8380F /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Sources/SwiftProtobuf/Version.swift; sourceTree = "<group>"; };
+		25C5C0EB638D4C4A2E713B40DA1E208A /* JSONMapEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONMapEncodingVisitor.swift; path = Sources/SwiftProtobuf/JSONMapEncodingVisitor.swift; sourceTree = "<group>"; };
+		27A3C9A702CBA4F281C6312B9E46B6D5 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
+		285AF313B0DB3C8A8A417C9D443F23C6 /* AZSResultSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSResultSegment.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResultSegment.m"; sourceTree = "<group>"; };
+		29ADC007D60BEA7A84AB9E971506336D /* AZSOperationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSOperationContext.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSOperationContext.m"; sourceTree = "<group>"; };
+		2C0F0AED11F4BDEE588742B3141E2AA4 /* TextFormatEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncoder.swift; path = Sources/SwiftProtobuf/TextFormatEncoder.swift; sourceTree = "<group>"; };
+		2D8800F66818BB449CAB38AD3F949537 /* AZSCorsRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCorsRule.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCorsRule.m"; sourceTree = "<group>"; };
+		2E24CDF0F49FB55A5636C8CB814B050D /* SwiftProtobuf.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftProtobuf.xcconfig; sourceTree = "<group>"; };
+		2F44147BC3CEF3CF332FB16953F42E16 /* MessageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageExtension.swift; path = Sources/SwiftProtobuf/MessageExtension.swift; sourceTree = "<group>"; };
+		30CB9F73D6F281BE4F814C48010C70D1 /* CustomJSONCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomJSONCodable.swift; path = Sources/SwiftProtobuf/CustomJSONCodable.swift; sourceTree = "<group>"; };
+		30E20F47A2807BE2C526A1AA3C3871F3 /* AZSSharedAccessAccountParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessAccountParameters.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessAccountParameters.m"; sourceTree = "<group>"; };
+		3249D116C855E8512AE547F203676E1C /* AZSBlobRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestFactory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestFactory.m"; sourceTree = "<group>"; };
+		34AA8296E6B0641984D3E5DDE14FFC0A /* wrappers.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrappers.pb.swift; path = Sources/SwiftProtobuf/wrappers.pb.swift; sourceTree = "<group>"; };
+		37588575766198EC2C7A5255887BA055 /* JSONDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecoder.swift; path = Sources/SwiftProtobuf/JSONDecoder.swift; sourceTree = "<group>"; };
+		3845FF21A2B31C3FB69999E13587C823 /* Google_Protobuf_ListValue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_ListValue+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_ListValue+Extensions.swift"; sourceTree = "<group>"; };
+		3BE37B74350E4B3E74FAB3CA4E1F91F2 /* AZSRetryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryContext.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryContext.m"; sourceTree = "<group>"; };
+		3EF11C896CE970ADF4172BE5CE23E555 /* AZSCloudStorageAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudStorageAccount.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudStorageAccount.m"; sourceTree = "<group>"; };
+		415BF720AE1868A68E04620DEFD9C65E /* AZSResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSResponseParser.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResponseParser.m"; sourceTree = "<group>"; };
+		433B140087324350DFE744EED3929E23 /* AZSAccessCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSAccessCondition.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAccessCondition.m"; sourceTree = "<group>"; };
+		43654857AA9B1891B43F5CBCA8F4C8C6 /* AZSServiceProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSServiceProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSServiceProperties.h"; sourceTree = "<group>"; };
+		462B819EE691D0FC55A0524F8C606E56 /* AZSRetryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryContext.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryContext.h"; sourceTree = "<group>"; };
+		46F44E7D95CA56B3EAC4283E9D5812B8 /* AZSBlobOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobOutputStream.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobOutputStream.h"; sourceTree = "<group>"; };
+		47B4A3A0EA7E8C6640E6791207D87FE8 /* ExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionMap.swift; path = Sources/SwiftProtobuf/ExtensionMap.swift; sourceTree = "<group>"; };
+		485330B1E8317760F68BE270C08F4D94 /* Message+BinaryAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+BinaryAdditions.swift"; path = "Sources/SwiftProtobuf/Message+BinaryAdditions.swift"; sourceTree = "<group>"; };
+		4858E15F48486FF7F46B2401C05E79BD /* AZSSharedAccessSignatureHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessSignatureHelper.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessSignatureHelper.m"; sourceTree = "<group>"; };
+		49C1C488F56378BED8218C3DC6AB034F /* Message+JSONAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONAdditions.swift"; sourceTree = "<group>"; };
+		4B70A3BD497F6E5ECE6F4F61B10ED548 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B86BE0C52C6464FF2709D5B9B82C1A7 /* AZSAccessCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSAccessCondition.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAccessCondition.h"; sourceTree = "<group>"; };
+		4BB5F65F20C77406BA35A50A7F4E8B48 /* TextFormatDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatDecoder.swift; path = Sources/SwiftProtobuf/TextFormatDecoder.swift; sourceTree = "<group>"; };
+		4BEBD8C3D75EC8BC1DA8549B154E85D2 /* AZSServiceProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSServiceProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSServiceProperties.m"; sourceTree = "<group>"; };
+		4C987AFFDF39085FCEACEFB7491F5C92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAF2313150AB6567691973D4E4BF17C /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SwiftProtobuf/Internal.swift; sourceTree = "<group>"; };
+		4CB6918D59923B311911F3D237EF62AF /* AZSBlobProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobProperties.m"; sourceTree = "<group>"; };
+		4CED25A0F6F5C109B2A6AD3625428F18 /* AZSSharedAccessHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessHeaders.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessHeaders.h"; sourceTree = "<group>"; };
+		4D9C64BA7B32BCE8975C5BE00314BF71 /* AnyMessageStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyMessageStorage.swift; path = Sources/SwiftProtobuf/AnyMessageStorage.swift; sourceTree = "<group>"; };
+		4DF70006969980876D09813EB32A1040 /* JSONDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingOptions.swift; path = Sources/SwiftProtobuf/JSONDecodingOptions.swift; sourceTree = "<group>"; };
+		52DD2EAD249691E08B4BB2A0981C8F4C /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
+		548281FF0A4EDCAC914ABA2B75701EA9 /* AZSCloudBlockBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlockBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlockBlob.h"; sourceTree = "<group>"; };
+		55A0B0C74728737AE50BD839794DD4FB /* BinaryEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingVisitor.swift; sourceTree = "<group>"; };
+		56743071B0758F2F79AF11FB7BFBF3D1 /* ProtobufAPIVersionCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufAPIVersionCheck.swift; path = Sources/SwiftProtobuf/ProtobufAPIVersionCheck.swift; sourceTree = "<group>"; };
 		5795D4223E895A372E12A0236B92E9E6 /* Pods-LocTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocTracker-umbrella.h"; sourceTree = "<group>"; };
-		58D242142560AE57C5E74D3DC3C9028F /* JSONDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecoder.swift; path = Sources/SwiftProtobuf/JSONDecoder.swift; sourceTree = "<group>"; };
+		598CC74FE6DFCB8BF9D74EC5061AA90F /* MathUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathUtils.swift; path = Sources/SwiftProtobuf/MathUtils.swift; sourceTree = "<group>"; };
 		5A32B267C7F2A20BB207A162074AE707 /* Pods-LocTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocTracker-resources.sh"; sourceTree = "<group>"; };
-		5D3DE0984AD344D4DE92A9CF4FB17E05 /* Message+BinaryAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+BinaryAdditions.swift"; path = "Sources/SwiftProtobuf/Message+BinaryAdditions.swift"; sourceTree = "<group>"; };
-		5E52CEA1D89267B77A2141820CF458F3 /* JSONScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONScanner.swift; path = Sources/SwiftProtobuf/JSONScanner.swift; sourceTree = "<group>"; };
-		5FD1B72BAE4DB6FC3969C80DABA28EB6 /* BinaryDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecodingOptions.swift; path = Sources/SwiftProtobuf/BinaryDecodingOptions.swift; sourceTree = "<group>"; };
-		63C359F1F285105FA5FF3C099BB61EE2 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftProtobuf.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7EE684C41B9A56C349E92042D9D86B /* AZSCloudAppendBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudAppendBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudAppendBlob.m"; sourceTree = "<group>"; };
+		61577402D735CF338BB7CDB74CDCCC85 /* TextFormatEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncodingVisitor.swift; path = Sources/SwiftProtobuf/TextFormatEncodingVisitor.swift; sourceTree = "<group>"; };
+		61C5C4CE26414FB9353DCC84CD671E2E /* AZSCloudBlobClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobClient.m"; sourceTree = "<group>"; };
+		6267FEEEE23FE5537B83CDD5E8CB3AC9 /* AZSClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZSClient.xcconfig; sourceTree = "<group>"; };
+		62A4C5A09078FD35839EBC211969BCD9 /* AZSErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSErrors.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSErrors.m"; sourceTree = "<group>"; };
+		64457AACCBDD4F52F5E3FA3993C1AD42 /* AZSNavigationUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSNavigationUtil.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNavigationUtil.m"; sourceTree = "<group>"; };
+		64E032CE2A362CCD78287B16A43632C9 /* AZSClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSClient-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		684AF982F42802D8269ACE88C9B30D59 /* UnknownStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnknownStorage.swift; path = Sources/SwiftProtobuf/UnknownStorage.swift; sourceTree = "<group>"; };
-		686F1C099B10156699A15E6342D41C84 /* timestamp.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = timestamp.pb.swift; path = Sources/SwiftProtobuf/timestamp.pb.swift; sourceTree = "<group>"; };
-		6C7E0016A5C3A01CC7B19ABF4798BE71 /* Visitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Visitor.swift; path = Sources/SwiftProtobuf/Visitor.swift; sourceTree = "<group>"; };
+		6616FCE0635B16B1785508FCB6CB47CB /* AZSContinuationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSContinuationToken.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSContinuationToken.h"; sourceTree = "<group>"; };
+		6803BA7F06D04B2AAB6DAB88E97C8188 /* timestamp.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = timestamp.pb.swift; path = Sources/SwiftProtobuf/timestamp.pb.swift; sourceTree = "<group>"; };
+		6896133787A073A45B881612E133079C /* SwiftProtobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-prefix.pch"; sourceTree = "<group>"; };
+		6A38DB6D91593CF93FCD487309251521 /* TimeUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUtils.swift; path = Sources/SwiftProtobuf/TimeUtils.swift; sourceTree = "<group>"; };
+		6B04A3A10AD95FB02C64E0D71C67F721 /* ProtobufMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufMap.swift; path = Sources/SwiftProtobuf/ProtobufMap.swift; sourceTree = "<group>"; };
+		6B416D40B724BFB0E52472F9A0B8FDC3 /* AZSSharedAccessBlobParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessBlobParameters.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessBlobParameters.h"; sourceTree = "<group>"; };
+		6B79D70F27022D283DF90F2E6CBE0F1D /* AZSStorageCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageCommand.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCommand.h"; sourceTree = "<group>"; };
+		6C5DF966F49EA09C30E160BD4EF9C9E6 /* FieldTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTag.swift; path = Sources/SwiftProtobuf/FieldTag.swift; sourceTree = "<group>"; };
+		6C7953591BE03D99E2B90C9614EE5BCE /* AZSSharedAccessHeaders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedAccessHeaders.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessHeaders.m"; sourceTree = "<group>"; };
+		6CC3B1CAF4D245EA09ABAE678A96808F /* AZSStorageCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageCredentials.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCredentials.h"; sourceTree = "<group>"; };
 		6F68FE989A42C08A0A672E0872D86DAF /* Pods-LocTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocTracker-acknowledgements.plist"; sourceTree = "<group>"; };
-		6F8432F2F2681AC22690FCB3A72AD336 /* BinaryEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingError.swift; path = Sources/SwiftProtobuf/BinaryEncodingError.swift; sourceTree = "<group>"; };
-		74E1CD08FA7EB9667C488AD9D444EA5C /* empty.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = empty.pb.swift; path = Sources/SwiftProtobuf/empty.pb.swift; sourceTree = "<group>"; };
+		73A8DBA70CB9E30E403AAEE8F8874216 /* AZSBlobContainerProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobContainerProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobContainerProperties.m"; sourceTree = "<group>"; };
+		746850EE4329ACEE30FCE4F131A521C5 /* Google_Protobuf_Wrappers+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Wrappers+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Wrappers+Extensions.swift"; sourceTree = "<group>"; };
 		76475B1981D92E4E3177F762F7C14D4F /* Pods-LocTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocTracker-frameworks.sh"; sourceTree = "<group>"; };
-		7B17DA277C8752741C8F223ED201BF54 /* SwiftProtobuf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftProtobuf.modulemap; sourceTree = "<group>"; };
-		7BB910BF4E88A42AD3A3441D1838778A /* Google_Protobuf_FieldMask+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_FieldMask+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_FieldMask+Extensions.swift"; sourceTree = "<group>"; };
-		7C4430B8C562685E60627D078E9413D3 /* AnyUnpackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUnpackError.swift; path = Sources/SwiftProtobuf/AnyUnpackError.swift; sourceTree = "<group>"; };
-		853401192AFE3AFD4EB8B4F13FAF6466 /* JSONEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncoder.swift; path = Sources/SwiftProtobuf/JSONEncoder.swift; sourceTree = "<group>"; };
+		772114D6321E0945670FAC6DA4212C2E /* JSONIntegerConverting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONIntegerConverting.swift; path = Sources/SwiftProtobuf/JSONIntegerConverting.swift; sourceTree = "<group>"; };
+		77B30A2F3901115CAE96A411F4B0A2BD /* HashVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashVisitor.swift; path = Sources/SwiftProtobuf/HashVisitor.swift; sourceTree = "<group>"; };
+		786395D51C5B457B4DE44D21F7E7C2A5 /* AZSNavigationUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSNavigationUtil.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNavigationUtil.h"; sourceTree = "<group>"; };
+		78ACF3B27C8547F5B425B3D72755F3EF /* AZSNoOpAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSNoOpAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNoOpAuthenticationHandler.h"; sourceTree = "<group>"; };
+		7AC9FAE15A64CC1B572F57D2164738B6 /* Google_Protobuf_Struct+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Struct+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Struct+Extensions.swift"; sourceTree = "<group>"; };
+		7BFE558F1CA6CD8A69A23879F6FCBA88 /* TextFormatScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatScanner.swift; path = Sources/SwiftProtobuf/TextFormatScanner.swift; sourceTree = "<group>"; };
+		81F0B3B6C49B7F7292C5E3E7964D92A8 /* AZSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZSClient.framework; path = AZSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		821AC2BB538DF430539948D86110F67E /* AZSCopyState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCopyState.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCopyState.h"; sourceTree = "<group>"; };
+		839DBCB6B2C03544B7323FCAE8A9E0BF /* Message+AnyAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+AnyAdditions.swift"; path = "Sources/SwiftProtobuf/Message+AnyAdditions.swift"; sourceTree = "<group>"; };
+		83E2689C96B9551FB2EA0F0EF10728C5 /* AZSBlobRequestXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestXML.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestXML.h"; sourceTree = "<group>"; };
+		84F4869394A7D2D4B0292C32D7AAA60E /* empty.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = empty.pb.swift; path = Sources/SwiftProtobuf/empty.pb.swift; sourceTree = "<group>"; };
+		8634FA12DEC37465CF6747BD2013A248 /* Visitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Visitor.swift; path = Sources/SwiftProtobuf/Visitor.swift; sourceTree = "<group>"; };
 		87A651E3050E7A53781814010302AB14 /* Pods-LocTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocTracker.release.xcconfig"; sourceTree = "<group>"; };
-		8DD287B6C149B86A940E9144A940C8B9 /* Google_Protobuf_Wrappers+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Wrappers+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Wrappers+Extensions.swift"; sourceTree = "<group>"; };
-		8FB11A1737E090E2A8B0C872BDD37878 /* BinaryDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecoder.swift; path = Sources/SwiftProtobuf/BinaryDecoder.swift; sourceTree = "<group>"; };
+		89A3A993EA23A183AB8BF4305D4A3ABA /* AZSStorageCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageCommand.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCommand.m"; sourceTree = "<group>"; };
+		8BBA249C9C8289CFE96FE4834AB0B48D /* AZSMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSMacros.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSMacros.h"; sourceTree = "<group>"; };
+		905A61E0536C83E5A187DA98FAEB8DF6 /* AZSRetryPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryPolicy.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryPolicy.h"; sourceTree = "<group>"; };
+		91CE004689C1B52C0A9EE7AE818AEDA2 /* AZSIPRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSIPRange.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSIPRange.h"; sourceTree = "<group>"; };
+		92E4640FAC013D16A6D4A62C3270A93A /* AZSSharedAccessSignatureHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessSignatureHelper.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessSignatureHelper.h"; sourceTree = "<group>"; };
+		9302B7572396BF92CEFE0E0A9EA04C76 /* AZSSharedKeyBlobAuthenticationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSSharedKeyBlobAuthenticationHandler.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedKeyBlobAuthenticationHandler.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		972A498BB742847818427C690E88D7D3 /* JSONEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingError.swift; path = Sources/SwiftProtobuf/JSONEncodingError.swift; sourceTree = "<group>"; };
-		9BBDF4016FC6E2513DE0BCCBCC4652E2 /* ProtoNameProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtoNameProviding.swift; path = Sources/SwiftProtobuf/ProtoNameProviding.swift; sourceTree = "<group>"; };
-		9C6BD4E7DC558DE16D2818C7D0EE0EBD /* SwiftProtobuf-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftProtobuf-dummy.m"; sourceTree = "<group>"; };
-		9D8F78151C7E5A90CDBEF2999D13EC06 /* ProtobufAPIVersionCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufAPIVersionCheck.swift; path = Sources/SwiftProtobuf/ProtobufAPIVersionCheck.swift; sourceTree = "<group>"; };
-		A05432E233EE9DE74CEC9171BE21382E /* TextFormatEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncodingVisitor.swift; path = Sources/SwiftProtobuf/TextFormatEncodingVisitor.swift; sourceTree = "<group>"; };
-		A1E7DDAC1402ABBA6ACB368D01631F8B /* JSONDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingOptions.swift; path = Sources/SwiftProtobuf/JSONDecodingOptions.swift; sourceTree = "<group>"; };
-		A2982DA2280530A26246FCD195A9E424 /* FieldTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTypes.swift; path = Sources/SwiftProtobuf/FieldTypes.swift; sourceTree = "<group>"; };
-		A4D30C6D0BE8871CE17DFE99E921212C /* FieldTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTag.swift; path = Sources/SwiftProtobuf/FieldTag.swift; sourceTree = "<group>"; };
-		A8A71D02C49CEEAB4AFAFCFF326C6689 /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
-		AE4046D848EC84FE7DD116D405A4601F /* TextFormatDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatDecodingError.swift; path = Sources/SwiftProtobuf/TextFormatDecodingError.swift; sourceTree = "<group>"; };
-		B081EC1D781A37A89A13E598A870C53F /* TextFormatScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatScanner.swift; path = Sources/SwiftProtobuf/TextFormatScanner.swift; sourceTree = "<group>"; };
-		B3550ED575B2F527FB92813D6798408E /* Google_Protobuf_Timestamp+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Timestamp+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Timestamp+Extensions.swift"; sourceTree = "<group>"; };
-		B4226F399575C85DB2596B510F5CC076 /* JSONIntegerConverting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONIntegerConverting.swift; path = Sources/SwiftProtobuf/JSONIntegerConverting.swift; sourceTree = "<group>"; };
-		BA8B9C522A8C11C91FDA7A539176D1D7 /* Google_Protobuf_Duration+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Duration+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Duration+Extensions.swift"; sourceTree = "<group>"; };
-		BD1FC0E643F7DA62600462AE229A7EF1 /* Google_Protobuf_Value+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Value+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Value+Extensions.swift"; sourceTree = "<group>"; };
-		BEF896EA6032EFAFA8F86747C705F163 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Sources/SwiftProtobuf/Message.swift; sourceTree = "<group>"; };
-		BF618247022F463C6D3CB688CBEE1790 /* Message+TextFormatAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+TextFormatAdditions.swift"; path = "Sources/SwiftProtobuf/Message+TextFormatAdditions.swift"; sourceTree = "<group>"; };
-		C0647B74CDBB9721249286D9090B0482 /* MessageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageExtension.swift; path = Sources/SwiftProtobuf/MessageExtension.swift; sourceTree = "<group>"; };
+		94065B1010AF03FEE056A351D2FC1DA2 /* AZSSharedKeyBlobAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedKeyBlobAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedKeyBlobAuthenticationHandler.h"; sourceTree = "<group>"; };
+		94C5C7FE8B90A6ABFA5B1013E805CEA7 /* AZSBlobOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobOutputStream.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobOutputStream.m"; sourceTree = "<group>"; };
+		94D0EC50A705E46D202AAB4E4AF7B8C5 /* AZSClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AZSClient.modulemap; sourceTree = "<group>"; };
+		965336C862B57B446B5386EB61D4573E /* BinaryDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecodingOptions.swift; path = Sources/SwiftProtobuf/BinaryDecodingOptions.swift; sourceTree = "<group>"; };
+		965822EAEAF4DE19C916492FEA2C4C1B /* AZSCloudBlockBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlockBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlockBlob.m"; sourceTree = "<group>"; };
+		980402F855FC4AA855D075E52423DD8C /* AZSRetryInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryInfo.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryInfo.m"; sourceTree = "<group>"; };
+		99B8977CC02BEDFEB6EAB8ED15DF5C6E /* AZSUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSUtil.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUtil.m"; sourceTree = "<group>"; };
+		9B01937CD31214966D271ACE33D12CA7 /* type.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = type.pb.swift; path = Sources/SwiftProtobuf/type.pb.swift; sourceTree = "<group>"; };
+		9C7185876952F73FEFF07008604129C2 /* JSONEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingError.swift; path = Sources/SwiftProtobuf/JSONEncodingError.swift; sourceTree = "<group>"; };
+		9DEC148DE7D6FD58D01EE8F46F8BB5BF /* AZSBlobResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobResponseParser.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobResponseParser.h"; sourceTree = "<group>"; };
+		9E051848AF0B051DF0F0AFAF5A6241CC /* AZSBlobRequestXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestXML.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestXML.m"; sourceTree = "<group>"; };
+		9F6DBEDED241C822105109677362C9D5 /* FieldTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTypes.swift; path = Sources/SwiftProtobuf/FieldTypes.swift; sourceTree = "<group>"; };
+		A1C0A1D0EDFB339A65C027EB2416EE6B /* AZSAuthenticationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSAuthenticationHandler.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSAuthenticationHandler.h"; sourceTree = "<group>"; };
+		A3BC5299F28A4E21DAAFD2D20EF646F8 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Sources/SwiftProtobuf/Message.swift; sourceTree = "<group>"; };
+		A3FA24F0A654DBB9B0A862E34E2E0F23 /* AZSCloudBlobContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobContainer.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobContainer.m"; sourceTree = "<group>"; };
+		A48CC261DC110FA1F35498D6719F3A4E /* SwiftProtobuf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftProtobuf.modulemap; sourceTree = "<group>"; };
+		A5A9C32A09F97D2FD69578FDEA6EF1A0 /* AZSClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSClient-prefix.pch"; sourceTree = "<group>"; };
+		A5AC26FDD4F6DF5E86BB10A935E65546 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = Sources/SwiftProtobuf/Enum.swift; sourceTree = "<group>"; };
+		A64E5ABD2029D7975411C5828061EB40 /* Google_Protobuf_Value+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Value+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Value+Extensions.swift"; sourceTree = "<group>"; };
+		A6E6B6485235B1AD5CE666092BFEC75B /* AZSExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSExecutor.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSExecutor.m"; sourceTree = "<group>"; };
+		A8DF927497D56FC700B6AE9A0DC8C821 /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = Sources/SwiftProtobuf/StringUtils.swift; sourceTree = "<group>"; };
+		A8ED1148686C9A9993E80F007119C794 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/SwiftProtobuf/Decoder.swift; sourceTree = "<group>"; };
+		ADAB7F01C7404E87B7D0CA5E6A5FC804 /* BinaryDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecodingError.swift; path = Sources/SwiftProtobuf/BinaryDecodingError.swift; sourceTree = "<group>"; };
+		ADF263CC5566A792758A2BD3774B86F6 /* Google_Protobuf_Duration+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Duration+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Duration+Extensions.swift"; sourceTree = "<group>"; };
+		AF35F1F1D6CED0DD15B7991609BF44B2 /* AZSCloudAppendBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudAppendBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudAppendBlob.h"; sourceTree = "<group>"; };
+		AFF2559C92409689A94FE30370165761 /* AZSSharedAccessAccountParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessAccountParameters.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessAccountParameters.h"; sourceTree = "<group>"; };
+		B0E7B8C0395D0040CAF2F3598DD5640B /* Google_Protobuf_Timestamp+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Timestamp+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Timestamp+Extensions.swift"; sourceTree = "<group>"; };
+		B0FAAA37DE18BF10D4178E44517159B6 /* ExtensibleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensibleMessage.swift; path = Sources/SwiftProtobuf/ExtensibleMessage.swift; sourceTree = "<group>"; };
+		B12E6355A597348415D36034A9C5D54A /* AZSCloudBlobDirectory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobDirectory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobDirectory.h"; sourceTree = "<group>"; };
+		B1A907BD9448A8E163F9F297C8C0E892 /* WireFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WireFormat.swift; path = Sources/SwiftProtobuf/WireFormat.swift; sourceTree = "<group>"; };
+		B32BDCDAE2D8D92386C9A7D869B38F2E /* AZSLoggingProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSLoggingProperties.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSLoggingProperties.m"; sourceTree = "<group>"; };
+		B4FF749CF3B86915CCF6C6A8127CC74B /* AZSRetryPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryPolicy.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryPolicy.m"; sourceTree = "<group>"; };
+		B65270B87260BD1C5EA6C058E58815C8 /* Pods_LocTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocTracker.framework; path = "Pods-LocTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68A76C24A5C4B9D634BEF13EE45B143 /* JSONDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingError.swift; path = Sources/SwiftProtobuf/JSONDecodingError.swift; sourceTree = "<group>"; };
+		B6D0CB6237E49949C137E0360EA6226A /* AZSCloudStorageAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudStorageAccount.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudStorageAccount.h"; sourceTree = "<group>"; };
+		B78043AA7DD7A49C5497D8C2D17E876B /* AZSBlockListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlockListItem.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlockListItem.m"; sourceTree = "<group>"; };
+		B8042A21DFCB5366801F67EE57BBAD86 /* AZSCloudClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudClient.m"; sourceTree = "<group>"; };
+		B8104D3A01FB732A3C2749ADD337B2A0 /* BinaryEncodingSizeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingSizeVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingSizeVisitor.swift; sourceTree = "<group>"; };
+		BA05825A7ADFEC8193DEAD2D416E180B /* AZSResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSResponseParser.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResponseParser.h"; sourceTree = "<group>"; };
+		BD6269F41AE46591F9DD3E714DB55563 /* SelectiveVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectiveVisitor.swift; path = Sources/SwiftProtobuf/SelectiveVisitor.swift; sourceTree = "<group>"; };
+		BD84AB1AD8E11581A908BA75E0AB1E9F /* BinaryEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncoder.swift; path = Sources/SwiftProtobuf/BinaryEncoder.swift; sourceTree = "<group>"; };
+		BDB8903D5DE363DCA7C2DF04E52B7F22 /* struct.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = struct.pb.swift; path = Sources/SwiftProtobuf/struct.pb.swift; sourceTree = "<group>"; };
+		BFAE35430C7CD207628DC914B2941B24 /* source_context.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = source_context.pb.swift; path = Sources/SwiftProtobuf/source_context.pb.swift; sourceTree = "<group>"; };
+		C26C79EC2CBD1191D26EC630B7303C10 /* AZSOperationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSOperationContext.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSOperationContext.h"; sourceTree = "<group>"; };
+		C2CA27DDEA17F9303870253DF68CDEB8 /* duration.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = duration.pb.swift; path = Sources/SwiftProtobuf/duration.pb.swift; sourceTree = "<group>"; };
+		C2EE321F7AADD02BC80FB0F585F474A4 /* AZSStorageUri.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageUri.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageUri.m"; sourceTree = "<group>"; };
+		C436503591B1CC8A1E9EA98B4CC08A05 /* AZSClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZSClient-dummy.m"; sourceTree = "<group>"; };
+		C46C6E2EA00082B8D9611518A3A2F741 /* AZSEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSEnums.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSEnums.h"; sourceTree = "<group>"; };
+		C5A89151476C6C1F87CAE786A7F34F3F /* SwiftProtobuf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-umbrella.h"; sourceTree = "<group>"; };
+		C5B08D923901690EE0F1A2A39BD34DC0 /* AZSBlobContainerProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobContainerProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobContainerProperties.h"; sourceTree = "<group>"; };
 		C6048DF76A169B040815AB82485CD75D /* Pods-LocTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8B60672752AE9B214CAAFEDF8BDB8AA /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = Sources/SwiftProtobuf/StringUtils.swift; sourceTree = "<group>"; };
-		C98D259862511A8264752A4C7AEC7416 /* Message+AnyAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+AnyAdditions.swift"; path = "Sources/SwiftProtobuf/Message+AnyAdditions.swift"; sourceTree = "<group>"; };
-		CA266A3849D4BE1C68BBF6D50C1EF996 /* ExtensionFields.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionFields.swift; path = Sources/SwiftProtobuf/ExtensionFields.swift; sourceTree = "<group>"; };
-		CFDE5C7C362A9C3235D43BA2B18EF94F /* SwiftProtobuf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-umbrella.h"; sourceTree = "<group>"; };
-		D12929F36A9D850C991F643EB7DC2966 /* any.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = any.pb.swift; path = Sources/SwiftProtobuf/any.pb.swift; sourceTree = "<group>"; };
-		D213C6347ACDA7C240375B431C065AF3 /* SimpleExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleExtensionMap.swift; path = Sources/SwiftProtobuf/SimpleExtensionMap.swift; sourceTree = "<group>"; };
-		D2BED06FC70F5416459DDA69693A491E /* ZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZigZag.swift; path = Sources/SwiftProtobuf/ZigZag.swift; sourceTree = "<group>"; };
-		D9AE097A5FB576C441C6DD90A0C43C52 /* struct.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = struct.pb.swift; path = Sources/SwiftProtobuf/struct.pb.swift; sourceTree = "<group>"; };
-		DAC3A43F05184052F659424FA6895C1E /* source_context.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = source_context.pb.swift; path = Sources/SwiftProtobuf/source_context.pb.swift; sourceTree = "<group>"; };
-		DB2ED58755B7561747769B6EFBB0C1A8 /* DoubleFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleFormatter.swift; path = Sources/SwiftProtobuf/DoubleFormatter.swift; sourceTree = "<group>"; };
-		DB44189DEC94C411862D9C0E8537CE77 /* Message+JSONArrayAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONArrayAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONArrayAdditions.swift"; sourceTree = "<group>"; };
+		C6320F8E0B70EBA8AA06A8B0B6B7CE0E /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
+		C75AAA99662E7FEF6B34EE0FC09FDFCE /* AZSRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestFactory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestFactory.h"; sourceTree = "<group>"; };
+		C91DCD3F4149941BAF34D0336BB540D1 /* BinaryEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingError.swift; path = Sources/SwiftProtobuf/BinaryEncodingError.swift; sourceTree = "<group>"; };
+		CF943CE0957F876A14B6601CDF846F09 /* AZSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSClient.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSClient.m"; sourceTree = "<group>"; };
+		D07614FD035DE204E43E045DD1FEA40F /* ProtoNameProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtoNameProviding.swift; path = Sources/SwiftProtobuf/ProtoNameProviding.swift; sourceTree = "<group>"; };
+		D085C30E79FCFF2D4651D965F9E77C47 /* AZSBlobRequestOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestOptions.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestOptions.h"; sourceTree = "<group>"; };
+		D274AA60932E5F26F6449797A57C2F0F /* AZSCloudPageBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudPageBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudPageBlob.m"; sourceTree = "<group>"; };
+		D387C8E9115BBBE3846A7A5120752E5C /* AZSBlobResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobResponseParser.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobResponseParser.m"; sourceTree = "<group>"; };
+		D3E2A1DD5743960DB71BDD0E369A29A8 /* AZSCloudClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudClient.h"; sourceTree = "<group>"; };
+		D3E91799D98BBB58875065AC87A82CD9 /* ExtensionFieldValueSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionFieldValueSet.swift; path = Sources/SwiftProtobuf/ExtensionFieldValueSet.swift; sourceTree = "<group>"; };
+		D4A679AD4222B178EB989200AE6B7EB0 /* AZSCloudBlobClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobClient.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobClient.h"; sourceTree = "<group>"; };
+		D58F64CE97993F3A47E2B3E4047A3F9B /* ExtensionFields.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionFields.swift; path = Sources/SwiftProtobuf/ExtensionFields.swift; sourceTree = "<group>"; };
+		D725F56287EAECA93F4CFCA276E081A9 /* AZSResultSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSResultSegment.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSResultSegment.h"; sourceTree = "<group>"; };
+		D7A68BC10B8D6DD57688997ADFC1B5D6 /* AZSIPRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSIPRange.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSIPRange.m"; sourceTree = "<group>"; };
+		D9AC1F367AD8354A7AB4793623721B62 /* AZSRequestOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestOptions.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestOptions.m"; sourceTree = "<group>"; };
+		D9EDDB37EA27B51D194243E65D442EE3 /* Google_Protobuf_FieldMask+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_FieldMask+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_FieldMask+Extensions.swift"; sourceTree = "<group>"; };
+		DAA5F146199FE8E78C8C298DD10E05CA /* SimpleExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleExtensionMap.swift; path = Sources/SwiftProtobuf/SimpleExtensionMap.swift; sourceTree = "<group>"; };
 		DB9B932A6B950EDE5E2E53423683AB46 /* Pods-LocTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocTracker.modulemap"; sourceTree = "<group>"; };
-		EAD83FDE95BCD32D1D89467CD7D8AFED /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Sources/SwiftProtobuf/Version.swift; sourceTree = "<group>"; };
-		EB05B699601628EE3121508848FC4B1E /* field_mask.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = field_mask.pb.swift; path = Sources/SwiftProtobuf/field_mask.pb.swift; sourceTree = "<group>"; };
-		EF12DAAACC6157F69D680F8EF5DCC1D0 /* BinaryEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingVisitor.swift; path = Sources/SwiftProtobuf/BinaryEncodingVisitor.swift; sourceTree = "<group>"; };
-		EF2C268632DFD330247883750D1001DD /* SwiftProtobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-prefix.pch"; sourceTree = "<group>"; };
-		F0E5AC29A386C11D9E89349D6C9F10D5 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = Sources/SwiftProtobuf/Enum.swift; sourceTree = "<group>"; };
+		DBE84B18A8E9AEC24C2C94572761174A /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftProtobuf.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4B318AF192F68442A0B5C235BA62AE /* AZSStorageCredentials.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSStorageCredentials.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageCredentials.m"; sourceTree = "<group>"; };
+		DF645C9133833B520F5DF073A0B8C462 /* AZSCloudPageBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudPageBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudPageBlob.h"; sourceTree = "<group>"; };
+		DF64EE70C92CA5CE8F8F972845D6708A /* AZSCorsRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCorsRule.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCorsRule.h"; sourceTree = "<group>"; };
+		DF81C9FAE9796755D63F829BAB6D982C /* UnknownStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnknownStorage.swift; path = Sources/SwiftProtobuf/UnknownStorage.swift; sourceTree = "<group>"; };
+		E24F277211FE6B88440A1EA49B10226A /* AZSRetryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRetryInfo.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryInfo.h"; sourceTree = "<group>"; };
+		E27BA67D7756791C63D814E514604B1A /* AZSLoggingProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSLoggingProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSLoggingProperties.h"; sourceTree = "<group>"; };
+		E50EC25032FDF7F15E5DF9E549A3E227 /* AZSSharedAccessPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSSharedAccessPolicy.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSSharedAccessPolicy.h"; sourceTree = "<group>"; };
+		E52CB22590700D1D57173486BC198E55 /* AZSBlobProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobProperties.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobProperties.h"; sourceTree = "<group>"; };
+		E6D6367138EE4D39FE629EC13E695F64 /* JSONEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingVisitor.swift; path = Sources/SwiftProtobuf/JSONEncodingVisitor.swift; sourceTree = "<group>"; };
+		E73B57370B06B9968663177B81B5A9FE /* AZSNoOpAuthenticationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSNoOpAuthenticationHandler.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSNoOpAuthenticationHandler.m"; sourceTree = "<group>"; };
+		E78F44FDB468E5D84035E9AEBA165F0F /* TextFormatDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatDecodingError.swift; path = Sources/SwiftProtobuf/TextFormatDecodingError.swift; sourceTree = "<group>"; };
+		E8C71204C4C6BAA00B1FDE4D23F1BF82 /* AZSBlobRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlobRequestFactory.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestFactory.h"; sourceTree = "<group>"; };
+		EFADDDDBBBF566749749711EB0D346D3 /* AZSStorageUri.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSStorageUri.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSStorageUri.h"; sourceTree = "<group>"; };
+		F0043D39B33E829E58D05ADFB385817C /* AZSBlockListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSBlockListItem.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlockListItem.h"; sourceTree = "<group>"; };
+		F1C19B4DF0C5F2A2A2D53F2C14979582 /* AZSRequestResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSRequestResult.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestResult.h"; sourceTree = "<group>"; };
+		F1C63CF80C1C163832806BA5B43F7CAC /* AZSBlobRequestOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSBlobRequestOptions.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSBlobRequestOptions.m"; sourceTree = "<group>"; };
 		F296B8E50136DA444CF54CCF86E0BA6B /* Pods-LocTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocTracker.debug.xcconfig"; sourceTree = "<group>"; };
-		F415A9C96732A3EFEB72657D40B4E247 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SwiftProtobuf/Internal.swift; sourceTree = "<group>"; };
-		F833DB30856ADCE8CF6654DCB44608C6 /* AnyMessageStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyMessageStorage.swift; path = Sources/SwiftProtobuf/AnyMessageStorage.swift; sourceTree = "<group>"; };
-		FA5190DED648319A943137121851AB93 /* HashVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashVisitor.swift; path = Sources/SwiftProtobuf/HashVisitor.swift; sourceTree = "<group>"; };
-		FA84BB078CE6506CA4B3E5E9EA7630DD /* Message+JSONAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONAdditions.swift"; sourceTree = "<group>"; };
-		FAE1FF9F933314527C4B0506F3F8CE4E /* BinaryEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncoder.swift; path = Sources/SwiftProtobuf/BinaryEncoder.swift; sourceTree = "<group>"; };
-		FC8923218EDC134E8881D7C4FAD53B49 /* ExtensibleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensibleMessage.swift; path = Sources/SwiftProtobuf/ExtensibleMessage.swift; sourceTree = "<group>"; };
-		FE6C346D7959C1A6ECE4EDBA973D5EC2 /* Google_Protobuf_Any+Registry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Registry.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Registry.swift"; sourceTree = "<group>"; };
+		F35EF4650C4F99CDC17F0494E9838079 /* AZSUriQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSUriQueryBuilder.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSUriQueryBuilder.h"; sourceTree = "<group>"; };
+		F39EC5A4DC0FD22F3B64E18F9ACE8943 /* AZSCopyState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCopyState.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCopyState.m"; sourceTree = "<group>"; };
+		F40527AA865D2E4FD58F3E374FB4F5F9 /* AZSULLRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSULLRange.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSULLRange.h"; sourceTree = "<group>"; };
+		F502D3060431D93FD0FE356CAA6B3DC9 /* Message+TextFormatAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+TextFormatAdditions.swift"; path = "Sources/SwiftProtobuf/Message+TextFormatAdditions.swift"; sourceTree = "<group>"; };
+		F5EE01A778BE1325A669E2E5173FABA9 /* AZSCloudBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlob.m"; sourceTree = "<group>"; };
+		F65C70A5FFDDE8E75105CE97B5AC7219 /* JSONScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONScanner.swift; path = Sources/SwiftProtobuf/JSONScanner.swift; sourceTree = "<group>"; };
+		F6D623A7279742DF9ACCCA75AEC27888 /* SwiftProtobuf-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftProtobuf-dummy.m"; sourceTree = "<group>"; };
+		F7066AB802BC17762B7F83BD92F5DE92 /* AZSCloudBlobDirectory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudBlobDirectory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobDirectory.m"; sourceTree = "<group>"; };
+		F950B85B94513F6E162FEB909ADB6108 /* Google_Protobuf_Any+Registry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Registry.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Registry.swift"; sourceTree = "<group>"; };
+		F9D9B0F26B51A6A69D6756D48A26FD07 /* AZSCloudBlobContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlobContainer.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlobContainer.h"; sourceTree = "<group>"; };
+		FDF9758717D573E93A374AC0D8F7C516 /* AZSErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSErrors.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSErrors.h"; sourceTree = "<group>"; };
+		FE271163645FA882C2987FBB4CC0A1A7 /* AZSRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRequestFactory.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRequestFactory.m"; sourceTree = "<group>"; };
+		FE3E6FB03C1C1B578180A9A5D2B65D84 /* field_mask.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = field_mask.pb.swift; path = Sources/SwiftProtobuf/field_mask.pb.swift; sourceTree = "<group>"; };
+		FEC88CA9D3325AE4BBD3094C8EFB5505 /* Message+JSONArrayAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONArrayAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONArrayAdditions.swift"; sourceTree = "<group>"; };
+		FF10FD089A3BA1E4B79C0C6EC6DE84A9 /* AZSCloudBlob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AZSCloudBlob.h; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudBlob.h"; sourceTree = "<group>"; };
+		FFA2B87A7A9B7D737FEBCAFF324576CB /* DoubleFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleFormatter.swift; path = Sources/SwiftProtobuf/DoubleFormatter.swift; sourceTree = "<group>"; };
+		FFC1749AA6055F622D51C74F7EF87525 /* Varint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Varint.swift; path = Sources/SwiftProtobuf/Varint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		78CA8DCC61EB8C275488074B832C0566 /* Frameworks */ = {
+		2278BAAABCF383B4E63D2B2CD17DE8B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1D570A560E08895B2C3C940EE0AE28 /* Foundation.framework in Frameworks */,
+				2F2163711C3B9C4E8EC5B5658A7DE8F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACDFCA54F372C1057DD383B579617259 /* Frameworks */ = {
+		248F1904618CBBE09954EDDDD9F36DD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C133D0D3CBCE4ECB77D5F843AC7E21F /* Foundation.framework in Frameworks */,
+				4DAB92B0DD64F7A9091B8765DB91DBA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33A0CC0D210AE578E270154B58F9574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6307F66DA3544BF695DFD036B1AE51DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146DEAB2260CD8931A59F7303F5093D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166DB5DA851010F5F6B9823B1AABF430 /* AZSClient */,
+				807F5C88A66A81D38A11A374F69FF93E /* SwiftProtobuf */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		166DB5DA851010F5F6B9823B1AABF430 /* AZSClient */ = {
+			isa = PBXGroup;
+			children = (
+				4B86BE0C52C6464FF2709D5B9B82C1A7 /* AZSAccessCondition.h */,
+				433B140087324350DFE744EED3929E23 /* AZSAccessCondition.m */,
+				A1C0A1D0EDFB339A65C027EB2416EE6B /* AZSAuthenticationHandler.h */,
+				C5B08D923901690EE0F1A2A39BD34DC0 /* AZSBlobContainerProperties.h */,
+				73A8DBA70CB9E30E403AAEE8F8874216 /* AZSBlobContainerProperties.m */,
+				46F44E7D95CA56B3EAC4283E9D5812B8 /* AZSBlobOutputStream.h */,
+				94C5C7FE8B90A6ABFA5B1013E805CEA7 /* AZSBlobOutputStream.m */,
+				E52CB22590700D1D57173486BC198E55 /* AZSBlobProperties.h */,
+				4CB6918D59923B311911F3D237EF62AF /* AZSBlobProperties.m */,
+				E8C71204C4C6BAA00B1FDE4D23F1BF82 /* AZSBlobRequestFactory.h */,
+				3249D116C855E8512AE547F203676E1C /* AZSBlobRequestFactory.m */,
+				D085C30E79FCFF2D4651D965F9E77C47 /* AZSBlobRequestOptions.h */,
+				F1C63CF80C1C163832806BA5B43F7CAC /* AZSBlobRequestOptions.m */,
+				83E2689C96B9551FB2EA0F0EF10728C5 /* AZSBlobRequestXML.h */,
+				9E051848AF0B051DF0F0AFAF5A6241CC /* AZSBlobRequestXML.m */,
+				9DEC148DE7D6FD58D01EE8F46F8BB5BF /* AZSBlobResponseParser.h */,
+				D387C8E9115BBBE3846A7A5120752E5C /* AZSBlobResponseParser.m */,
+				18219C227D4B5ECBA42ACE8E7B110385 /* AZSBlobUploadHelper.h */,
+				0D0058C3EDBEC0BB1519ABB9CEA83DF4 /* AZSBlobUploadHelper.m */,
+				F0043D39B33E829E58D05ADFB385817C /* AZSBlockListItem.h */,
+				B78043AA7DD7A49C5497D8C2D17E876B /* AZSBlockListItem.m */,
+				01213B7FA28FFDBE8CF09173297BFEA7 /* AZSClient.h */,
+				CF943CE0957F876A14B6601CDF846F09 /* AZSClient.m */,
+				AF35F1F1D6CED0DD15B7991609BF44B2 /* AZSCloudAppendBlob.h */,
+				5F7EE684C41B9A56C349E92042D9D86B /* AZSCloudAppendBlob.m */,
+				FF10FD089A3BA1E4B79C0C6EC6DE84A9 /* AZSCloudBlob.h */,
+				F5EE01A778BE1325A669E2E5173FABA9 /* AZSCloudBlob.m */,
+				D4A679AD4222B178EB989200AE6B7EB0 /* AZSCloudBlobClient.h */,
+				61C5C4CE26414FB9353DCC84CD671E2E /* AZSCloudBlobClient.m */,
+				F9D9B0F26B51A6A69D6756D48A26FD07 /* AZSCloudBlobContainer.h */,
+				A3FA24F0A654DBB9B0A862E34E2E0F23 /* AZSCloudBlobContainer.m */,
+				B12E6355A597348415D36034A9C5D54A /* AZSCloudBlobDirectory.h */,
+				F7066AB802BC17762B7F83BD92F5DE92 /* AZSCloudBlobDirectory.m */,
+				548281FF0A4EDCAC914ABA2B75701EA9 /* AZSCloudBlockBlob.h */,
+				965822EAEAF4DE19C916492FEA2C4C1B /* AZSCloudBlockBlob.m */,
+				D3E2A1DD5743960DB71BDD0E369A29A8 /* AZSCloudClient.h */,
+				B8042A21DFCB5366801F67EE57BBAD86 /* AZSCloudClient.m */,
+				DF645C9133833B520F5DF073A0B8C462 /* AZSCloudPageBlob.h */,
+				D274AA60932E5F26F6449797A57C2F0F /* AZSCloudPageBlob.m */,
+				B6D0CB6237E49949C137E0360EA6226A /* AZSCloudStorageAccount.h */,
+				3EF11C896CE970ADF4172BE5CE23E555 /* AZSCloudStorageAccount.m */,
+				2132E6C93EE925E673674AB875164BE8 /* AZSConstants.h */,
+				096D32AA8255988FACB38137225F8C4F /* AZSConstants.m */,
+				6616FCE0635B16B1785508FCB6CB47CB /* AZSContinuationToken.h */,
+				08795B0C91C346433D62228E433E5754 /* AZSContinuationToken.m */,
+				821AC2BB538DF430539948D86110F67E /* AZSCopyState.h */,
+				F39EC5A4DC0FD22F3B64E18F9ACE8943 /* AZSCopyState.m */,
+				DF64EE70C92CA5CE8F8F972845D6708A /* AZSCorsRule.h */,
+				2D8800F66818BB449CAB38AD3F949537 /* AZSCorsRule.m */,
+				C46C6E2EA00082B8D9611518A3A2F741 /* AZSEnums.h */,
+				FDF9758717D573E93A374AC0D8F7C516 /* AZSErrors.h */,
+				62A4C5A09078FD35839EBC211969BCD9 /* AZSErrors.m */,
+				0540C7310A9D26CAB46AD23D80F77959 /* AZSExecutor.h */,
+				A6E6B6485235B1AD5CE666092BFEC75B /* AZSExecutor.m */,
+				91CE004689C1B52C0A9EE7AE818AEDA2 /* AZSIPRange.h */,
+				D7A68BC10B8D6DD57688997ADFC1B5D6 /* AZSIPRange.m */,
+				E27BA67D7756791C63D814E514604B1A /* AZSLoggingProperties.h */,
+				B32BDCDAE2D8D92386C9A7D869B38F2E /* AZSLoggingProperties.m */,
+				8BBA249C9C8289CFE96FE4834AB0B48D /* AZSMacros.h */,
+				21FA288281B13FF3D780740095997C97 /* AZSMetricsProperties.h */,
+				1276E0DD802C54865DBAE8C7041D09A5 /* AZSMetricsProperties.m */,
+				786395D51C5B457B4DE44D21F7E7C2A5 /* AZSNavigationUtil.h */,
+				64457AACCBDD4F52F5E3FA3993C1AD42 /* AZSNavigationUtil.m */,
+				78ACF3B27C8547F5B425B3D72755F3EF /* AZSNoOpAuthenticationHandler.h */,
+				E73B57370B06B9968663177B81B5A9FE /* AZSNoOpAuthenticationHandler.m */,
+				C26C79EC2CBD1191D26EC630B7303C10 /* AZSOperationContext.h */,
+				29ADC007D60BEA7A84AB9E971506336D /* AZSOperationContext.m */,
+				C75AAA99662E7FEF6B34EE0FC09FDFCE /* AZSRequestFactory.h */,
+				FE271163645FA882C2987FBB4CC0A1A7 /* AZSRequestFactory.m */,
+				09C217BCC35D2123D9181D28D6750604 /* AZSRequestOptions.h */,
+				D9AC1F367AD8354A7AB4793623721B62 /* AZSRequestOptions.m */,
+				F1C19B4DF0C5F2A2A2D53F2C14979582 /* AZSRequestResult.h */,
+				1E7EEA2A5056AD83248D608668DD9527 /* AZSRequestResult.m */,
+				BA05825A7ADFEC8193DEAD2D416E180B /* AZSResponseParser.h */,
+				415BF720AE1868A68E04620DEFD9C65E /* AZSResponseParser.m */,
+				D725F56287EAECA93F4CFCA276E081A9 /* AZSResultSegment.h */,
+				285AF313B0DB3C8A8A417C9D443F23C6 /* AZSResultSegment.m */,
+				462B819EE691D0FC55A0524F8C606E56 /* AZSRetryContext.h */,
+				3BE37B74350E4B3E74FAB3CA4E1F91F2 /* AZSRetryContext.m */,
+				E24F277211FE6B88440A1EA49B10226A /* AZSRetryInfo.h */,
+				980402F855FC4AA855D075E52423DD8C /* AZSRetryInfo.m */,
+				905A61E0536C83E5A187DA98FAEB8DF6 /* AZSRetryPolicy.h */,
+				B4FF749CF3B86915CCF6C6A8127CC74B /* AZSRetryPolicy.m */,
+				43654857AA9B1891B43F5CBCA8F4C8C6 /* AZSServiceProperties.h */,
+				4BEBD8C3D75EC8BC1DA8549B154E85D2 /* AZSServiceProperties.m */,
+				AFF2559C92409689A94FE30370165761 /* AZSSharedAccessAccountParameters.h */,
+				30E20F47A2807BE2C526A1AA3C3871F3 /* AZSSharedAccessAccountParameters.m */,
+				6B416D40B724BFB0E52472F9A0B8FDC3 /* AZSSharedAccessBlobParameters.h */,
+				1A494A95A6EA8311E73C67CD92857B53 /* AZSSharedAccessBlobParameters.m */,
+				4CED25A0F6F5C109B2A6AD3625428F18 /* AZSSharedAccessHeaders.h */,
+				6C7953591BE03D99E2B90C9614EE5BCE /* AZSSharedAccessHeaders.m */,
+				E50EC25032FDF7F15E5DF9E549A3E227 /* AZSSharedAccessPolicy.h */,
+				1FDF0C0306802A34CF85DD8BBF622650 /* AZSSharedAccessPolicy.m */,
+				92E4640FAC013D16A6D4A62C3270A93A /* AZSSharedAccessSignatureHelper.h */,
+				4858E15F48486FF7F46B2401C05E79BD /* AZSSharedAccessSignatureHelper.m */,
+				94065B1010AF03FEE056A351D2FC1DA2 /* AZSSharedKeyBlobAuthenticationHandler.h */,
+				9302B7572396BF92CEFE0E0A9EA04C76 /* AZSSharedKeyBlobAuthenticationHandler.m */,
+				6B79D70F27022D283DF90F2E6CBE0F1D /* AZSStorageCommand.h */,
+				89A3A993EA23A183AB8BF4305D4A3ABA /* AZSStorageCommand.m */,
+				6CC3B1CAF4D245EA09ABAE678A96808F /* AZSStorageCredentials.h */,
+				DF4B318AF192F68442A0B5C235BA62AE /* AZSStorageCredentials.m */,
+				EFADDDDBBBF566749749711EB0D346D3 /* AZSStorageUri.h */,
+				C2EE321F7AADD02BC80FB0F585F474A4 /* AZSStorageUri.m */,
+				F40527AA865D2E4FD58F3E374FB4F5F9 /* AZSULLRange.h */,
+				F35EF4650C4F99CDC17F0494E9838079 /* AZSUriQueryBuilder.h */,
+				11F77AD8E801DA24939EC66799BDF33F /* AZSUriQueryBuilder.m */,
+				03496C5E942B5110852E169E7815C2F0 /* AZSUtil.h */,
+				99B8977CC02BEDFEB6EAB8ED15DF5C6E /* AZSUtil.m */,
+				E2D8F9D319E987DD1E0827B9CDC7EE76 /* Support Files */,
+			);
+			name = AZSClient;
+			path = AZSClient;
+			sourceTree = "<group>";
+		};
+		183FBD30ADDF9F035BD5EACADFA6692A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C987AFFDF39085FCEACEFB7491F5C92 /* Info.plist */,
+				A48CC261DC110FA1F35498D6719F3A4E /* SwiftProtobuf.modulemap */,
+				2E24CDF0F49FB55A5636C8CB814B050D /* SwiftProtobuf.xcconfig */,
+				F6D623A7279742DF9ACCCA75AEC27888 /* SwiftProtobuf-dummy.m */,
+				6896133787A073A45B881612E133079C /* SwiftProtobuf-prefix.pch */,
+				C5A89151476C6C1F87CAE786A7F34F3F /* SwiftProtobuf-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftProtobuf";
+			sourceTree = "<group>";
+		};
 		23DB94E6DDE1A099C83D88899F7B7B0A /* Pods-LocTracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,122 +621,109 @@
 			path = "Target Support Files/Pods-LocTracker";
 			sourceTree = "<group>";
 		};
-		49D2E6A1FF523576FE94C40C8BCF263E /* SwiftProtobuf */ = {
-			isa = PBXGroup;
-			children = (
-				D12929F36A9D850C991F643EB7DC2966 /* any.pb.swift */,
-				F833DB30856ADCE8CF6654DCB44608C6 /* AnyMessageStorage.swift */,
-				7C4430B8C562685E60627D078E9413D3 /* AnyUnpackError.swift */,
-				56E36C9AB1A4A5231CCA683361911650 /* api.pb.swift */,
-				8FB11A1737E090E2A8B0C872BDD37878 /* BinaryDecoder.swift */,
-				462CF108C35315C6CA0773607A935EB5 /* BinaryDecodingError.swift */,
-				5FD1B72BAE4DB6FC3969C80DABA28EB6 /* BinaryDecodingOptions.swift */,
-				A8A71D02C49CEEAB4AFAFCFF326C6689 /* BinaryDelimited.swift */,
-				FAE1FF9F933314527C4B0506F3F8CE4E /* BinaryEncoder.swift */,
-				6F8432F2F2681AC22690FCB3A72AD336 /* BinaryEncodingError.swift */,
-				15960ABEAD39DD42778BECECE4E9F8AE /* BinaryEncodingSizeVisitor.swift */,
-				EF12DAAACC6157F69D680F8EF5DCC1D0 /* BinaryEncodingVisitor.swift */,
-				24FA7D158DF5EE2D169B6354C6336459 /* CustomJSONCodable.swift */,
-				3171C1672C6849ED058CED91FCD7BBF4 /* Decoder.swift */,
-				DB2ED58755B7561747769B6EFBB0C1A8 /* DoubleFormatter.swift */,
-				3D82BE6A9573A96C51D549F3FE332215 /* duration.pb.swift */,
-				74E1CD08FA7EB9667C488AD9D444EA5C /* empty.pb.swift */,
-				F0E5AC29A386C11D9E89349D6C9F10D5 /* Enum.swift */,
-				FC8923218EDC134E8881D7C4FAD53B49 /* ExtensibleMessage.swift */,
-				CA266A3849D4BE1C68BBF6D50C1EF996 /* ExtensionFields.swift */,
-				48105E16B047076A1D73BE3EC9FF68C2 /* ExtensionFieldValueSet.swift */,
-				2F48C72D790982CA40656ABD669CA6C4 /* ExtensionMap.swift */,
-				EB05B699601628EE3121508848FC4B1E /* field_mask.pb.swift */,
-				A4D30C6D0BE8871CE17DFE99E921212C /* FieldTag.swift */,
-				A2982DA2280530A26246FCD195A9E424 /* FieldTypes.swift */,
-				45A20577AD30FAFCBE2B036453431394 /* Google_Protobuf_Any+Extensions.swift */,
-				FE6C346D7959C1A6ECE4EDBA973D5EC2 /* Google_Protobuf_Any+Registry.swift */,
-				BA8B9C522A8C11C91FDA7A539176D1D7 /* Google_Protobuf_Duration+Extensions.swift */,
-				7BB910BF4E88A42AD3A3441D1838778A /* Google_Protobuf_FieldMask+Extensions.swift */,
-				0D148557070A4CCA82B24F71341B355D /* Google_Protobuf_ListValue+Extensions.swift */,
-				0A1D44171912093AB4043A7083C73674 /* Google_Protobuf_Struct+Extensions.swift */,
-				B3550ED575B2F527FB92813D6798408E /* Google_Protobuf_Timestamp+Extensions.swift */,
-				BD1FC0E643F7DA62600462AE229A7EF1 /* Google_Protobuf_Value+Extensions.swift */,
-				8DD287B6C149B86A940E9144A940C8B9 /* Google_Protobuf_Wrappers+Extensions.swift */,
-				FA5190DED648319A943137121851AB93 /* HashVisitor.swift */,
-				F415A9C96732A3EFEB72657D40B4E247 /* Internal.swift */,
-				58D242142560AE57C5E74D3DC3C9028F /* JSONDecoder.swift */,
-				1ECB35CE8DCCD8777B491C6BACCCE882 /* JSONDecodingError.swift */,
-				A1E7DDAC1402ABBA6ACB368D01631F8B /* JSONDecodingOptions.swift */,
-				853401192AFE3AFD4EB8B4F13FAF6466 /* JSONEncoder.swift */,
-				972A498BB742847818427C690E88D7D3 /* JSONEncodingError.swift */,
-				48A4BB658E61468C57A41FCFF935094E /* JSONEncodingVisitor.swift */,
-				B4226F399575C85DB2596B510F5CC076 /* JSONIntegerConverting.swift */,
-				3A98428E6D2562F6839870ECF0D17893 /* JSONMapEncodingVisitor.swift */,
-				5E52CEA1D89267B77A2141820CF458F3 /* JSONScanner.swift */,
-				34EAD16F27901D82A6F65BC1378D8F7E /* MathUtils.swift */,
-				BEF896EA6032EFAFA8F86747C705F163 /* Message.swift */,
-				C98D259862511A8264752A4C7AEC7416 /* Message+AnyAdditions.swift */,
-				5D3DE0984AD344D4DE92A9CF4FB17E05 /* Message+BinaryAdditions.swift */,
-				FA84BB078CE6506CA4B3E5E9EA7630DD /* Message+JSONAdditions.swift */,
-				DB44189DEC94C411862D9C0E8537CE77 /* Message+JSONArrayAdditions.swift */,
-				BF618247022F463C6D3CB688CBEE1790 /* Message+TextFormatAdditions.swift */,
-				C0647B74CDBB9721249286D9090B0482 /* MessageExtension.swift */,
-				1BA73967D23D308FBAABBE9EB94011EC /* NameMap.swift */,
-				9D8F78151C7E5A90CDBEF2999D13EC06 /* ProtobufAPIVersionCheck.swift */,
-				47F5D401962FC97C621CA0D3124152AB /* ProtobufMap.swift */,
-				9BBDF4016FC6E2513DE0BCCBCC4652E2 /* ProtoNameProviding.swift */,
-				16EAD2EA2EF1E34937A64519C065DA44 /* SelectiveVisitor.swift */,
-				D213C6347ACDA7C240375B431C065AF3 /* SimpleExtensionMap.swift */,
-				DAC3A43F05184052F659424FA6895C1E /* source_context.pb.swift */,
-				C8B60672752AE9B214CAAFEDF8BDB8AA /* StringUtils.swift */,
-				D9AE097A5FB576C441C6DD90A0C43C52 /* struct.pb.swift */,
-				134286FEF5035525147275A845E8E2AB /* TextFormatDecoder.swift */,
-				AE4046D848EC84FE7DD116D405A4601F /* TextFormatDecodingError.swift */,
-				4D240C46827006572084346F0ACB8D9E /* TextFormatEncoder.swift */,
-				A05432E233EE9DE74CEC9171BE21382E /* TextFormatEncodingVisitor.swift */,
-				B081EC1D781A37A89A13E598A870C53F /* TextFormatScanner.swift */,
-				686F1C099B10156699A15E6342D41C84 /* timestamp.pb.swift */,
-				123D94AFE3942F7187443E9056767655 /* TimeUtils.swift */,
-				0CDCCF4A1EC824FB48BA2A12E14B6C87 /* type.pb.swift */,
-				684AF982F42802D8269ACE88C9B30D59 /* UnknownStorage.swift */,
-				445862B461563632D9E4791B20C64258 /* Varint.swift */,
-				EAD83FDE95BCD32D1D89467CD7D8AFED /* Version.swift */,
-				6C7E0016A5C3A01CC7B19ABF4798BE71 /* Visitor.swift */,
-				495620ABC52EFF89988A1AC737169857 /* WireFormat.swift */,
-				081D3032EE6C60853F682F74992F81B3 /* wrappers.pb.swift */,
-				D2BED06FC70F5416459DDA69693A491E /* ZigZag.swift */,
-				6CE4B669D522C5DCBD45A2C0323C7326 /* Support Files */,
-			);
-			name = SwiftProtobuf;
-			path = SwiftProtobuf;
-			sourceTree = "<group>";
-		};
-		6CE4B669D522C5DCBD45A2C0323C7326 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				22C800ECA956EC94B71EE5CB99BB879B /* Info.plist */,
-				7B17DA277C8752741C8F223ED201BF54 /* SwiftProtobuf.modulemap */,
-				22A29678154935338481EA34A17A6379 /* SwiftProtobuf.xcconfig */,
-				9C6BD4E7DC558DE16D2818C7D0EE0EBD /* SwiftProtobuf-dummy.m */,
-				EF2C268632DFD330247883750D1001DD /* SwiftProtobuf-prefix.pch */,
-				CFDE5C7C362A9C3235D43BA2B18EF94F /* SwiftProtobuf-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftProtobuf";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EF72E8C184120EB72991D30945566E5C /* Pods */,
-				A018D623E30A3C7FAB3FB482BAF536FE /* Products */,
+				146DEAB2260CD8931A59F7303F5093D5 /* Pods */,
+				9195EC7F3AEAADD11DD25F0AF2491B68 /* Products */,
 				AB11614BFA8F786F79CB10D51D0B3444 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A018D623E30A3C7FAB3FB482BAF536FE /* Products */ = {
+		807F5C88A66A81D38A11A374F69FF93E /* SwiftProtobuf */ = {
 			isa = PBXGroup;
 			children = (
-				3759E81811588E3D54C5D4424502BD85 /* Pods_LocTracker.framework */,
-				63C359F1F285105FA5FF3C099BB61EE2 /* SwiftProtobuf.framework */,
+				04C5972D472A48BB1463CBB57F236A05 /* any.pb.swift */,
+				4D9C64BA7B32BCE8975C5BE00314BF71 /* AnyMessageStorage.swift */,
+				23E1A59C483F2E483F848339B4E7AD98 /* AnyUnpackError.swift */,
+				C6320F8E0B70EBA8AA06A8B0B6B7CE0E /* api.pb.swift */,
+				058A0326E2278495F21EF79110469437 /* BinaryDecoder.swift */,
+				ADAB7F01C7404E87B7D0CA5E6A5FC804 /* BinaryDecodingError.swift */,
+				965336C862B57B446B5386EB61D4573E /* BinaryDecodingOptions.swift */,
+				52DD2EAD249691E08B4BB2A0981C8F4C /* BinaryDelimited.swift */,
+				BD84AB1AD8E11581A908BA75E0AB1E9F /* BinaryEncoder.swift */,
+				C91DCD3F4149941BAF34D0336BB540D1 /* BinaryEncodingError.swift */,
+				B8104D3A01FB732A3C2749ADD337B2A0 /* BinaryEncodingSizeVisitor.swift */,
+				55A0B0C74728737AE50BD839794DD4FB /* BinaryEncodingVisitor.swift */,
+				30CB9F73D6F281BE4F814C48010C70D1 /* CustomJSONCodable.swift */,
+				A8ED1148686C9A9993E80F007119C794 /* Decoder.swift */,
+				FFA2B87A7A9B7D737FEBCAFF324576CB /* DoubleFormatter.swift */,
+				C2CA27DDEA17F9303870253DF68CDEB8 /* duration.pb.swift */,
+				84F4869394A7D2D4B0292C32D7AAA60E /* empty.pb.swift */,
+				A5AC26FDD4F6DF5E86BB10A935E65546 /* Enum.swift */,
+				B0FAAA37DE18BF10D4178E44517159B6 /* ExtensibleMessage.swift */,
+				D58F64CE97993F3A47E2B3E4047A3F9B /* ExtensionFields.swift */,
+				D3E91799D98BBB58875065AC87A82CD9 /* ExtensionFieldValueSet.swift */,
+				47B4A3A0EA7E8C6640E6791207D87FE8 /* ExtensionMap.swift */,
+				FE3E6FB03C1C1B578180A9A5D2B65D84 /* field_mask.pb.swift */,
+				6C5DF966F49EA09C30E160BD4EF9C9E6 /* FieldTag.swift */,
+				9F6DBEDED241C822105109677362C9D5 /* FieldTypes.swift */,
+				225F664F2CEA5C3857B2077230F7716E /* Google_Protobuf_Any+Extensions.swift */,
+				F950B85B94513F6E162FEB909ADB6108 /* Google_Protobuf_Any+Registry.swift */,
+				ADF263CC5566A792758A2BD3774B86F6 /* Google_Protobuf_Duration+Extensions.swift */,
+				D9EDDB37EA27B51D194243E65D442EE3 /* Google_Protobuf_FieldMask+Extensions.swift */,
+				3845FF21A2B31C3FB69999E13587C823 /* Google_Protobuf_ListValue+Extensions.swift */,
+				7AC9FAE15A64CC1B572F57D2164738B6 /* Google_Protobuf_Struct+Extensions.swift */,
+				B0E7B8C0395D0040CAF2F3598DD5640B /* Google_Protobuf_Timestamp+Extensions.swift */,
+				A64E5ABD2029D7975411C5828061EB40 /* Google_Protobuf_Value+Extensions.swift */,
+				746850EE4329ACEE30FCE4F131A521C5 /* Google_Protobuf_Wrappers+Extensions.swift */,
+				77B30A2F3901115CAE96A411F4B0A2BD /* HashVisitor.swift */,
+				4CAF2313150AB6567691973D4E4BF17C /* Internal.swift */,
+				37588575766198EC2C7A5255887BA055 /* JSONDecoder.swift */,
+				B68A76C24A5C4B9D634BEF13EE45B143 /* JSONDecodingError.swift */,
+				4DF70006969980876D09813EB32A1040 /* JSONDecodingOptions.swift */,
+				20B5681441BBD71C3B85B0D88209CBF2 /* JSONEncoder.swift */,
+				9C7185876952F73FEFF07008604129C2 /* JSONEncodingError.swift */,
+				E6D6367138EE4D39FE629EC13E695F64 /* JSONEncodingVisitor.swift */,
+				772114D6321E0945670FAC6DA4212C2E /* JSONIntegerConverting.swift */,
+				25C5C0EB638D4C4A2E713B40DA1E208A /* JSONMapEncodingVisitor.swift */,
+				F65C70A5FFDDE8E75105CE97B5AC7219 /* JSONScanner.swift */,
+				598CC74FE6DFCB8BF9D74EC5061AA90F /* MathUtils.swift */,
+				A3BC5299F28A4E21DAAFD2D20EF646F8 /* Message.swift */,
+				839DBCB6B2C03544B7323FCAE8A9E0BF /* Message+AnyAdditions.swift */,
+				485330B1E8317760F68BE270C08F4D94 /* Message+BinaryAdditions.swift */,
+				49C1C488F56378BED8218C3DC6AB034F /* Message+JSONAdditions.swift */,
+				FEC88CA9D3325AE4BBD3094C8EFB5505 /* Message+JSONArrayAdditions.swift */,
+				F502D3060431D93FD0FE356CAA6B3DC9 /* Message+TextFormatAdditions.swift */,
+				2F44147BC3CEF3CF332FB16953F42E16 /* MessageExtension.swift */,
+				27A3C9A702CBA4F281C6312B9E46B6D5 /* NameMap.swift */,
+				56743071B0758F2F79AF11FB7BFBF3D1 /* ProtobufAPIVersionCheck.swift */,
+				6B04A3A10AD95FB02C64E0D71C67F721 /* ProtobufMap.swift */,
+				D07614FD035DE204E43E045DD1FEA40F /* ProtoNameProviding.swift */,
+				BD6269F41AE46591F9DD3E714DB55563 /* SelectiveVisitor.swift */,
+				DAA5F146199FE8E78C8C298DD10E05CA /* SimpleExtensionMap.swift */,
+				BFAE35430C7CD207628DC914B2941B24 /* source_context.pb.swift */,
+				A8DF927497D56FC700B6AE9A0DC8C821 /* StringUtils.swift */,
+				BDB8903D5DE363DCA7C2DF04E52B7F22 /* struct.pb.swift */,
+				4BB5F65F20C77406BA35A50A7F4E8B48 /* TextFormatDecoder.swift */,
+				E78F44FDB468E5D84035E9AEBA165F0F /* TextFormatDecodingError.swift */,
+				2C0F0AED11F4BDEE588742B3141E2AA4 /* TextFormatEncoder.swift */,
+				61577402D735CF338BB7CDB74CDCCC85 /* TextFormatEncodingVisitor.swift */,
+				7BFE558F1CA6CD8A69A23879F6FCBA88 /* TextFormatScanner.swift */,
+				6803BA7F06D04B2AAB6DAB88E97C8188 /* timestamp.pb.swift */,
+				6A38DB6D91593CF93FCD487309251521 /* TimeUtils.swift */,
+				9B01937CD31214966D271ACE33D12CA7 /* type.pb.swift */,
+				DF81C9FAE9796755D63F829BAB6D982C /* UnknownStorage.swift */,
+				FFC1749AA6055F622D51C74F7EF87525 /* Varint.swift */,
+				243910E08B78CFFBFC0E100B4CB8380F /* Version.swift */,
+				8634FA12DEC37465CF6747BD2013A248 /* Visitor.swift */,
+				B1A907BD9448A8E163F9F297C8C0E892 /* WireFormat.swift */,
+				34AA8296E6B0641984D3E5DDE14FFC0A /* wrappers.pb.swift */,
+				23A5128F51FA71839329DCFEFC0AB64D /* ZigZag.swift */,
+				183FBD30ADDF9F035BD5EACADFA6692A /* Support Files */,
+			);
+			name = SwiftProtobuf;
+			path = SwiftProtobuf;
+			sourceTree = "<group>";
+		};
+		9195EC7F3AEAADD11DD25F0AF2491B68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F0B3B6C49B7F7292C5E3E7964D92A8 /* AZSClient.framework */,
+				B65270B87260BD1C5EA6C058E58815C8 /* Pods_LocTracker.framework */,
+				DBE84B18A8E9AEC24C2C94572761174A /* SwiftProtobuf.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,61 +752,113 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EF72E8C184120EB72991D30945566E5C /* Pods */ = {
+		E2D8F9D319E987DD1E0827B9CDC7EE76 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49D2E6A1FF523576FE94C40C8BCF263E /* SwiftProtobuf */,
+				94D0EC50A705E46D202AAB4E4AF7B8C5 /* AZSClient.modulemap */,
+				6267FEEEE23FE5537B83CDD5E8CB3AC9 /* AZSClient.xcconfig */,
+				C436503591B1CC8A1E9EA98B4CC08A05 /* AZSClient-dummy.m */,
+				A5A9C32A09F97D2FD69578FDEA6EF1A0 /* AZSClient-prefix.pch */,
+				64E032CE2A362CCD78287B16A43632C9 /* AZSClient-umbrella.h */,
+				4B70A3BD497F6E5ECE6F4F61B10ED548 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/AZSClient";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6269C557FC5E29E90183C894D566F565 /* Headers */ = {
+		17B7E07FB451AA8C774EE2D7B372B81E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2F944E7A7A4024C1268F0FA8D326E1 /* Pods-LocTracker-umbrella.h in Headers */,
+				F4342FDBBB545C7BCFBF77A4816A4F2F /* AZSAccessCondition.h in Headers */,
+				F476D125339601EDF3944CA452B3C7C6 /* AZSAuthenticationHandler.h in Headers */,
+				3D7789D7A2A9128E3855129377AEB6AD /* AZSBlobContainerProperties.h in Headers */,
+				457BDCC61A37805C9041565881816E04 /* AZSBlobOutputStream.h in Headers */,
+				1717BED84A9DAF4FD298305F5ED5EDF6 /* AZSBlobProperties.h in Headers */,
+				E28EFCCD068C7E2E3C86194BF956B8B8 /* AZSBlobRequestFactory.h in Headers */,
+				619A2685E95F605DDC69B1F9BB3D842C /* AZSBlobRequestOptions.h in Headers */,
+				DF456189BECA49AEB3C00AEDB6CB5469 /* AZSBlobRequestXML.h in Headers */,
+				28FC690E43D1F47B6DEB1DCEF26B59AF /* AZSBlobResponseParser.h in Headers */,
+				5461AF30C721618330205C68C4BC1CD5 /* AZSBlobUploadHelper.h in Headers */,
+				D46439A39AA3CDE8307DF8E216410618 /* AZSBlockListItem.h in Headers */,
+				08EC63BA1DA6788F3A0865EDF88709DE /* AZSClient-umbrella.h in Headers */,
+				91C8025A9D8102E64F4A73CA72AEC136 /* AZSClient.h in Headers */,
+				558ACB1352EAE749D1336471208293E4 /* AZSCloudAppendBlob.h in Headers */,
+				C59A9912B0BB66D32D67F1ADF4C8C52F /* AZSCloudBlob.h in Headers */,
+				927E019CF0A78AB2C0505058A28A8812 /* AZSCloudBlobClient.h in Headers */,
+				41529EDA7C7EF6C20C4AFC19187B676D /* AZSCloudBlobContainer.h in Headers */,
+				4CCF01773DCF9C369C994EAD9A19482E /* AZSCloudBlobDirectory.h in Headers */,
+				8D7EF752266FAD223219C6B29F998C62 /* AZSCloudBlockBlob.h in Headers */,
+				E1F9C5779A58FEF92BB2E8A32BFC7599 /* AZSCloudClient.h in Headers */,
+				13B145EF1046F8A2F20D389BCFE84CCB /* AZSCloudPageBlob.h in Headers */,
+				54C357703A60923BAC39F54A7AE80A69 /* AZSCloudStorageAccount.h in Headers */,
+				4334AD415552A7E035EAB7CF148BA43A /* AZSConstants.h in Headers */,
+				0B2B4217A0680A571A1CE2354BF567C1 /* AZSContinuationToken.h in Headers */,
+				E33ED0EE131677F1D86299485A73D564 /* AZSCopyState.h in Headers */,
+				5F21266EE51E8EEECFA2110AB1F78854 /* AZSCorsRule.h in Headers */,
+				BBB8993834D0D104A14BD1A5B2EBE4F6 /* AZSEnums.h in Headers */,
+				E6452E410D6CB65634ECAFA9F1DAB079 /* AZSErrors.h in Headers */,
+				C707F8EDEC538A060652E73686843C5F /* AZSExecutor.h in Headers */,
+				8FFB467069AE6096958B7730C1894DE8 /* AZSIPRange.h in Headers */,
+				CA8D2292880AB4E73BCAB4FB634F061A /* AZSLoggingProperties.h in Headers */,
+				A04D9E5B3B7609AB17F6E5888D306668 /* AZSMacros.h in Headers */,
+				82BAC98A60FC8B2DFA523761D43AE9F9 /* AZSMetricsProperties.h in Headers */,
+				28517434ED5A44974DDC04E6858CC356 /* AZSNavigationUtil.h in Headers */,
+				7FBC69CF50C5F594A963158BFA5DEEE2 /* AZSNoOpAuthenticationHandler.h in Headers */,
+				CD282F17D55D20A2AAF93414099D8446 /* AZSOperationContext.h in Headers */,
+				93460FF8A33A039B3FB3E40A223F6A9C /* AZSRequestFactory.h in Headers */,
+				D80019796DCA09D8BD91269FE8668221 /* AZSRequestOptions.h in Headers */,
+				5150BEB1032666E118B5515E84C6B1DF /* AZSRequestResult.h in Headers */,
+				274AB669D23F9742A55FD1E8B621644E /* AZSResponseParser.h in Headers */,
+				7D2A671A416E47FD40747D4F8B81C15C /* AZSResultSegment.h in Headers */,
+				79DD83CB69EE662816E47019CC1710D3 /* AZSRetryContext.h in Headers */,
+				25230301451E4DC5296AAE371C6A5C8C /* AZSRetryInfo.h in Headers */,
+				D09DA4791A8095836397E53262DC1A82 /* AZSRetryPolicy.h in Headers */,
+				C431E8F3C0A1F1258C60AF75226E5EDD /* AZSServiceProperties.h in Headers */,
+				7427013F81A943903B6D9F5BADC12523 /* AZSSharedAccessAccountParameters.h in Headers */,
+				753D539F26F8B78218F6176759630CB8 /* AZSSharedAccessBlobParameters.h in Headers */,
+				E9521319130382FFBE6C574FE828364D /* AZSSharedAccessHeaders.h in Headers */,
+				3C7C07CECC3B6638CCDF7797FE1623CD /* AZSSharedAccessPolicy.h in Headers */,
+				7E26A9345395D2BBD73D0D211A18EF83 /* AZSSharedAccessSignatureHelper.h in Headers */,
+				C99125900A909E8B3A17D08C5C64A0B4 /* AZSSharedKeyBlobAuthenticationHandler.h in Headers */,
+				BCE1C63A7D8E942BC9055154210198EE /* AZSStorageCommand.h in Headers */,
+				D1372ABBFDE1F53CD9E9AB486DB2730B /* AZSStorageCredentials.h in Headers */,
+				9E037F26FDA801463F3794057914DA65 /* AZSStorageUri.h in Headers */,
+				B9CB19D433F1064D43A6F1C29455C82F /* AZSULLRange.h in Headers */,
+				761EAF8F4EB4E81CFA40B6B8F752F41F /* AZSUriQueryBuilder.h in Headers */,
+				89E181A600B6AB8A12E60BCBA91BF4D2 /* AZSUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E0867688A354A30D9C2095E51188EB9 /* Headers */ = {
+		3647568A65BEDB53341C19C1349F6070 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBA3840E1607355A2E76C0822B510F60 /* SwiftProtobuf-umbrella.h in Headers */,
+				18896483A0540A2AE77D5458966002A3 /* SwiftProtobuf-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A3BEF11177B6EC81C3A51DA1C17B2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2226904FE7FF52038B20C0C6477DC6AB /* Pods-LocTracker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23695CEA4B55972865C3798F00DDC8E6 /* Pods-LocTracker */ = {
+		7F5150F09A859E62A1003B091A565131 /* SwiftProtobuf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E0177D7DCBFD8A44C82C70CBDD621DA /* Build configuration list for PBXNativeTarget "Pods-LocTracker" */;
+			buildConfigurationList = 30BC44DBEB979368D397FF1245811882 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */;
 			buildPhases = (
-				F870922F45437644360E83F54FE59D03 /* Sources */,
-				78CA8DCC61EB8C275488074B832C0566 /* Frameworks */,
-				6269C557FC5E29E90183C894D566F565 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				129B1339F722E6C568C6B267DAFFF7CE /* PBXTargetDependency */,
-			);
-			name = "Pods-LocTracker";
-			productName = "Pods-LocTracker";
-			productReference = 3759E81811588E3D54C5D4424502BD85 /* Pods_LocTracker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DC0E8033208D535FDB87E53C6CACFD4E /* SwiftProtobuf */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22AC2EE7EB3566EDD9FCDFDC6301EDB4 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */;
-			buildPhases = (
-				A6BD3FBDF674D5DDE2DA70CDD821807B /* Sources */,
-				ACDFCA54F372C1057DD383B579617259 /* Frameworks */,
-				7E0867688A354A30D9C2095E51188EB9 /* Headers */,
+				2EC368C6A357796E89830FBEA4F23ADD /* Sources */,
+				248F1904618CBBE09954EDDDD9F36DD2 /* Frameworks */,
+				3647568A65BEDB53341C19C1349F6070 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -446,7 +866,43 @@
 			);
 			name = SwiftProtobuf;
 			productName = SwiftProtobuf;
-			productReference = 63C359F1F285105FA5FF3C099BB61EE2 /* SwiftProtobuf.framework */;
+			productReference = DBE84B18A8E9AEC24C2C94572761174A /* SwiftProtobuf.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92D4BC1A78BD6D90B9E8E7B612A450A2 /* Pods-LocTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609744BB8691FD50103D7B3692A6D7C1 /* Build configuration list for PBXNativeTarget "Pods-LocTracker" */;
+			buildPhases = (
+				99E0ED2F500D60B8C2D56B8FCDD94725 /* Sources */,
+				2278BAAABCF383B4E63D2B2CD17DE8B7 /* Frameworks */,
+				D6A3BEF11177B6EC81C3A51DA1C17B2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F286507F70DA0BC00C0A9C60DD824F30 /* PBXTargetDependency */,
+				6204149BEB8C2B1B669DCAE7A6E79164 /* PBXTargetDependency */,
+			);
+			name = "Pods-LocTracker";
+			productName = "Pods-LocTracker";
+			productReference = B65270B87260BD1C5EA6C058E58815C8 /* Pods_LocTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B057C33533B34EC4EA0116CE0025C20A /* AZSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CE9657EDEA890460433536A063ED31 /* Build configuration list for PBXNativeTarget "AZSClient" */;
+			buildPhases = (
+				D6AC3C52BA6047C231DFC035F0C70843 /* Sources */,
+				E33A0CC0D210AE578E270154B58F9574 /* Frameworks */,
+				17B7E07FB451AA8C774EE2D7B372B81E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZSClient;
+			productName = AZSClient;
+			productReference = 81F0B3B6C49B7F7292C5E3E7964D92A8 /* AZSClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -466,118 +922,185 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A018D623E30A3C7FAB3FB482BAF536FE /* Products */;
+			productRefGroup = 9195EC7F3AEAADD11DD25F0AF2491B68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23695CEA4B55972865C3798F00DDC8E6 /* Pods-LocTracker */,
-				DC0E8033208D535FDB87E53C6CACFD4E /* SwiftProtobuf */,
+				B057C33533B34EC4EA0116CE0025C20A /* AZSClient */,
+				92D4BC1A78BD6D90B9E8E7B612A450A2 /* Pods-LocTracker */,
+				7F5150F09A859E62A1003B091A565131 /* SwiftProtobuf */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6BD3FBDF674D5DDE2DA70CDD821807B /* Sources */ = {
+		2EC368C6A357796E89830FBEA4F23ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				190B5866AA784BC3555DCCC1C9CE3902 /* any.pb.swift in Sources */,
-				AD7FBB077A43009921C26AE13ED54C19 /* AnyMessageStorage.swift in Sources */,
-				43A7F9DDE7F942DDDCC2D127D0A256E5 /* AnyUnpackError.swift in Sources */,
-				37D5F2E1E8B9DDECBE9D1E1CDBDB5D62 /* api.pb.swift in Sources */,
-				3EA4BA69A2C2162C4B778BE3A6F31237 /* BinaryDecoder.swift in Sources */,
-				166597BE1645CC7221D79EE843425C4F /* BinaryDecodingError.swift in Sources */,
-				7B6AEAB747EE317572E562D4C902F7B0 /* BinaryDecodingOptions.swift in Sources */,
-				EDB4B0681DE6DF9336A76F656A86D5AC /* BinaryDelimited.swift in Sources */,
-				573916AD36199A7A1E5E244EFFBE4175 /* BinaryEncoder.swift in Sources */,
-				C2792F7146952BA6C7A9EB42AFD1E4D7 /* BinaryEncodingError.swift in Sources */,
-				8EA6609A5529F6FC100BE2A0755E149D /* BinaryEncodingSizeVisitor.swift in Sources */,
-				91C1FB29AFAFBB18452822CDAD2669BF /* BinaryEncodingVisitor.swift in Sources */,
-				1762DDD303C1CC31011EE5339503318A /* CustomJSONCodable.swift in Sources */,
-				5B1E842CAEFF2EC4618593C66D483380 /* Decoder.swift in Sources */,
-				0F3CC18E908628FA0A6ECC7A21B23E23 /* DoubleFormatter.swift in Sources */,
-				1E784C67607B92A1A8BFDC9AF35C26E8 /* duration.pb.swift in Sources */,
-				AD1F836E4041C9BE5214871C68F935C6 /* empty.pb.swift in Sources */,
-				4E02027C2635A1DB072AB75131BB2317 /* Enum.swift in Sources */,
-				94564A7A153607C124A8811219064486 /* ExtensibleMessage.swift in Sources */,
-				0AF4B2F525E74C943A0E12617B03DA0A /* ExtensionFields.swift in Sources */,
-				EBD0280C199E673DB5335DD6EBF8E14D /* ExtensionFieldValueSet.swift in Sources */,
-				F1ED6420156E736DFA442F0B64F43200 /* ExtensionMap.swift in Sources */,
-				262CA7F71948C8EF3D3445DE16447BB4 /* field_mask.pb.swift in Sources */,
-				D9EE4C34D74B51DC1A94A5B3AAF48012 /* FieldTag.swift in Sources */,
-				8109FBEE035815954C207CC6D1E689FC /* FieldTypes.swift in Sources */,
-				DF5D34FF022C28AAF9FD2AF449E78C56 /* Google_Protobuf_Any+Extensions.swift in Sources */,
-				DBE05751EC3DE7B63BB390077494DE60 /* Google_Protobuf_Any+Registry.swift in Sources */,
-				C50446CAAA8A3BFD78B3FB70172BE018 /* Google_Protobuf_Duration+Extensions.swift in Sources */,
-				8AA28E33BB2201BB94107C6AA127C726 /* Google_Protobuf_FieldMask+Extensions.swift in Sources */,
-				E7483D13FFF4916F3D740C4D9CA5AB7F /* Google_Protobuf_ListValue+Extensions.swift in Sources */,
-				A0E6E786B0449C0AD6A926688E6307EB /* Google_Protobuf_Struct+Extensions.swift in Sources */,
-				BAD20191D201E76184CD7CCD68A78A8E /* Google_Protobuf_Timestamp+Extensions.swift in Sources */,
-				E4D59CFA40018BB6CF880EFCD19DE7ED /* Google_Protobuf_Value+Extensions.swift in Sources */,
-				1A6235D42763B9DE900018013A285FC6 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */,
-				3BDC2A270E1CA57139B59718B7C00FB2 /* HashVisitor.swift in Sources */,
-				27D844872ABDD7EAD841EB3CAE7D0129 /* Internal.swift in Sources */,
-				DE9389CD5C39B12F87D9150BB1B424F7 /* JSONDecoder.swift in Sources */,
-				54E3F5EC927B3A2614E517CC565A0268 /* JSONDecodingError.swift in Sources */,
-				5B2F6587463DE6F91666330C0E244A24 /* JSONDecodingOptions.swift in Sources */,
-				C18D410D7A94095805F8B8DCB4582721 /* JSONEncoder.swift in Sources */,
-				002CF2C40895A816649A2917056C803A /* JSONEncodingError.swift in Sources */,
-				DA024DA9D921F9B3BE2FBB351F88663B /* JSONEncodingVisitor.swift in Sources */,
-				A6EC9858279B09657B87E81E5C9452BF /* JSONIntegerConverting.swift in Sources */,
-				06B02F3CA5641C17F9A9FD77177A1D7D /* JSONMapEncodingVisitor.swift in Sources */,
-				1AD29442CC206CF60F2E5FE710D7F683 /* JSONScanner.swift in Sources */,
-				E68B49095637430A8E27FB823C49FD1D /* MathUtils.swift in Sources */,
-				51A74B760E2D14272B4C230DE71FA8D6 /* Message+AnyAdditions.swift in Sources */,
-				929D6F8591AF492BF06F26D8AE1C6D7A /* Message+BinaryAdditions.swift in Sources */,
-				B742634E0D565F67027891720E9797B4 /* Message+JSONAdditions.swift in Sources */,
-				64A2EA180A83381B48DA611C25624BF3 /* Message+JSONArrayAdditions.swift in Sources */,
-				AC3B35BA32A6D7295B9BF258469678A9 /* Message+TextFormatAdditions.swift in Sources */,
-				CFF99F8A83E99B3EBF6392AFABB63B95 /* Message.swift in Sources */,
-				266F977071885F2DD283A7E18ADD71E3 /* MessageExtension.swift in Sources */,
-				CD3E14355C6C8FC3A8E2E88A59A0FBAE /* NameMap.swift in Sources */,
-				AA0B8AEACC239879B89A255C79EF85C4 /* ProtobufAPIVersionCheck.swift in Sources */,
-				66BAEB37F6F8BAAFFC6206191DFBFF1C /* ProtobufMap.swift in Sources */,
-				B8324029399FFBB383C76112E72A0A0E /* ProtoNameProviding.swift in Sources */,
-				3597A40C1AA846591B709ECD6EC1E261 /* SelectiveVisitor.swift in Sources */,
-				A6D4ACD5F4BB3B56948FCD0B7481DFDD /* SimpleExtensionMap.swift in Sources */,
-				238B0DB53E8A3538284CF1ACDD351214 /* source_context.pb.swift in Sources */,
-				F431DDC3D9ABB8DD0412314E78DBCC69 /* StringUtils.swift in Sources */,
-				02EFBA80F94C6FBE921B41AC03DC7DAF /* struct.pb.swift in Sources */,
-				4DBE24F17A019EE0110E1082046E313D /* SwiftProtobuf-dummy.m in Sources */,
-				CB5E8228D6BACDF6524E82775D1E0F2D /* TextFormatDecoder.swift in Sources */,
-				ED2F530A460D057B1294D22530BD40DE /* TextFormatDecodingError.swift in Sources */,
-				4758593762AB57393DE6532660162A6D /* TextFormatEncoder.swift in Sources */,
-				E10DBC1148A780A6A0F1ABFF1C4CB263 /* TextFormatEncodingVisitor.swift in Sources */,
-				DA791E098F1FE63E74DB3EB4640134BF /* TextFormatScanner.swift in Sources */,
-				21A55D49FC5B588940C54717B391FE9F /* timestamp.pb.swift in Sources */,
-				CBF2AFA338C1042B817319E2131A3854 /* TimeUtils.swift in Sources */,
-				ADA147E007C3EA48994A45592FB306AC /* type.pb.swift in Sources */,
-				F0D6FFB16B3649A54F0498D66A9340E7 /* UnknownStorage.swift in Sources */,
-				4D7F266AA5334E21EE68AE0DC7251047 /* Varint.swift in Sources */,
-				788987DE27C371F3976DBDBC76BFD54D /* Version.swift in Sources */,
-				B1D44C580F916B0AA9E9DABC0E79FC3D /* Visitor.swift in Sources */,
-				8A001C0056E31D0DDEF2B2D60C208892 /* WireFormat.swift in Sources */,
-				3C7369214F7A1926687872B5FBD64556 /* wrappers.pb.swift in Sources */,
-				54A7D5C94023A715FC86D8C0A75DBEE9 /* ZigZag.swift in Sources */,
+				4474D0A6FA7846545EE9694AF4250A24 /* any.pb.swift in Sources */,
+				E6AD2B76AC554E92FE3EFA4F77600DD9 /* AnyMessageStorage.swift in Sources */,
+				1C632ACCD4DE0FB6FF44213313753B8B /* AnyUnpackError.swift in Sources */,
+				D0D3C47648F94993102571B86848E4CA /* api.pb.swift in Sources */,
+				5EB15F42243E282350508B6B97FE4055 /* BinaryDecoder.swift in Sources */,
+				ED4C01A3864F13C14B56DC8D19453708 /* BinaryDecodingError.swift in Sources */,
+				07FC9D7F80E9B59EA6DB86ADF9474EC7 /* BinaryDecodingOptions.swift in Sources */,
+				9228C2D6F9995A2B9466DA7B9E6C6BA7 /* BinaryDelimited.swift in Sources */,
+				C0BA7F2FDA3AA7614FA70FBCF843B26A /* BinaryEncoder.swift in Sources */,
+				8B635C2FED058EE597DE3C4FA076E4D5 /* BinaryEncodingError.swift in Sources */,
+				E6E0E6C456EFAD63B264AEED0CC08867 /* BinaryEncodingSizeVisitor.swift in Sources */,
+				FF6659439948E021F6A1AD753611EDF2 /* BinaryEncodingVisitor.swift in Sources */,
+				39FBDE958BA1939F6B96E93F541FC33D /* CustomJSONCodable.swift in Sources */,
+				636BEC958B5B2E4B15022C782BF7E2B2 /* Decoder.swift in Sources */,
+				656B0EFF2B0657C28CA999F83B468391 /* DoubleFormatter.swift in Sources */,
+				AC7A4C7777E77703833B7248B03A6181 /* duration.pb.swift in Sources */,
+				AC8CFF80C0A08833D39FF17595A8D6CE /* empty.pb.swift in Sources */,
+				78345BC4DAB4952A00D5451931BC3E14 /* Enum.swift in Sources */,
+				A7B102DC7CCA97A510D670FA2BEE7E20 /* ExtensibleMessage.swift in Sources */,
+				738C7EF9D235D520118278144915CF2F /* ExtensionFields.swift in Sources */,
+				25223B34719E8EBCB3D7293AA2865446 /* ExtensionFieldValueSet.swift in Sources */,
+				CAA3DB0020994A28E0705BFFF8A1F73A /* ExtensionMap.swift in Sources */,
+				7645ED3383E7D048941AD66056207108 /* field_mask.pb.swift in Sources */,
+				C3125F5BCFE8BDEB56474DAA51827CDB /* FieldTag.swift in Sources */,
+				B3353FC6424D63F10A22F5BADCB63226 /* FieldTypes.swift in Sources */,
+				35661920AC9B0FFDF3D40775DF5C33FC /* Google_Protobuf_Any+Extensions.swift in Sources */,
+				90184395DFFA8911DCFAA2E4A7232F69 /* Google_Protobuf_Any+Registry.swift in Sources */,
+				87B57A1660FE077873CA1A30E6F74006 /* Google_Protobuf_Duration+Extensions.swift in Sources */,
+				36A7ACE3A3345006D7A3FD3C668CC39B /* Google_Protobuf_FieldMask+Extensions.swift in Sources */,
+				521333F07DEA73142EBA4591DABB164C /* Google_Protobuf_ListValue+Extensions.swift in Sources */,
+				A746111B449139B85FD9FF2626FFDB65 /* Google_Protobuf_Struct+Extensions.swift in Sources */,
+				2422A26CB352CFB9C3AE86E3DA7ACC91 /* Google_Protobuf_Timestamp+Extensions.swift in Sources */,
+				5BE37102D0BF0AA505937C2BEB596F18 /* Google_Protobuf_Value+Extensions.swift in Sources */,
+				B4DCD68C0E7FEC553A50DD8B834B72F6 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */,
+				CC56B83894B891CDED477B83D8CF82E1 /* HashVisitor.swift in Sources */,
+				AB74C6316F96CDB9BB2FB3A8615E7B8D /* Internal.swift in Sources */,
+				9BD72D6A91FB74EE9739B3CEDA61F1D3 /* JSONDecoder.swift in Sources */,
+				36667BA9E006EA27579C2D8BA28D73EA /* JSONDecodingError.swift in Sources */,
+				F592C55C883E6AD3A33DBF9E3F94EC7F /* JSONDecodingOptions.swift in Sources */,
+				A7654ACAFACDA495A547CE7E684FE409 /* JSONEncoder.swift in Sources */,
+				8FBF91215A02D08530AFFF04A4B40529 /* JSONEncodingError.swift in Sources */,
+				9655FC3E06400372C793E1B7B167A8F6 /* JSONEncodingVisitor.swift in Sources */,
+				343131199EADEC6F8D5940F4C0C30292 /* JSONIntegerConverting.swift in Sources */,
+				45B78DCAB5EEE1248B376B90DDFA1D7A /* JSONMapEncodingVisitor.swift in Sources */,
+				A56DE290EFEA18691CE6067CC5D689A8 /* JSONScanner.swift in Sources */,
+				C9D9BA5FF7961BACDABF4448F0561D45 /* MathUtils.swift in Sources */,
+				BA69BEC4BD7EE91C360DE92BA46159EC /* Message+AnyAdditions.swift in Sources */,
+				3D7293868BDD2AE5EE7CCAA8849C3EDE /* Message+BinaryAdditions.swift in Sources */,
+				73B5179336073F78F0584B3D29B42155 /* Message+JSONAdditions.swift in Sources */,
+				79596B5B377090AB7310B255F0F469FD /* Message+JSONArrayAdditions.swift in Sources */,
+				D52D83F804EF76E4F9F8FC80CDF8E1F1 /* Message+TextFormatAdditions.swift in Sources */,
+				80A6DB4E6C235A4A2FB3351D3C53D00A /* Message.swift in Sources */,
+				EE6988174881AE68CFCF3DCB0DD0964F /* MessageExtension.swift in Sources */,
+				E1F8935EB64A6CAEB3E859B0718DCCCD /* NameMap.swift in Sources */,
+				91D28175767A9C0C8709123891EC8FA6 /* ProtobufAPIVersionCheck.swift in Sources */,
+				302C6508C326D9D6E97342ADED792340 /* ProtobufMap.swift in Sources */,
+				AF14FD4569E2B3E03B03A1CC16AF80BC /* ProtoNameProviding.swift in Sources */,
+				F7D6A080B0785BBA6E69381A442B5718 /* SelectiveVisitor.swift in Sources */,
+				3DC44B7738AF5D1159904A61F06FA71B /* SimpleExtensionMap.swift in Sources */,
+				7CC6539BAA788B802ED89DFB38B4AF0E /* source_context.pb.swift in Sources */,
+				5CC68886C9414A34B5FDF8C3879E41C2 /* StringUtils.swift in Sources */,
+				FE45E831DF20BD589008ABBE1AB7850D /* struct.pb.swift in Sources */,
+				B361D3E01BA02F15DA33BAA4A0B6CB04 /* SwiftProtobuf-dummy.m in Sources */,
+				CA416550957CDD427D1A13BE3F555AC9 /* TextFormatDecoder.swift in Sources */,
+				A00E68DC5F4E103AC13939B592B00574 /* TextFormatDecodingError.swift in Sources */,
+				EA800EB7A6F40C4BD427D4F3602E8345 /* TextFormatEncoder.swift in Sources */,
+				99F266C699F90B1AE9B9170AB4EAE9B0 /* TextFormatEncodingVisitor.swift in Sources */,
+				1B08D76ECD5A7FB712FDAEF0E59079C9 /* TextFormatScanner.swift in Sources */,
+				9068B6C550681D8FDEA81813BDD704AE /* timestamp.pb.swift in Sources */,
+				4F2B7BB976FB1876B17976FD5AEFEC69 /* TimeUtils.swift in Sources */,
+				B32AB0623F707A4A763E31D0E072B176 /* type.pb.swift in Sources */,
+				61F719CDCD50DE58290EFFA788002750 /* UnknownStorage.swift in Sources */,
+				96490E486755FED092511283D1E22E0E /* Varint.swift in Sources */,
+				325DA47B1D439C0FFC0D3F83CFCCE607 /* Version.swift in Sources */,
+				391A281D4B5ECC475BEA7698896C4587 /* Visitor.swift in Sources */,
+				43242CC7BBCF3D8EFB8BCAFE7BAD34BA /* WireFormat.swift in Sources */,
+				950634D3F01697AD74F7C20C117A88C9 /* wrappers.pb.swift in Sources */,
+				DE96897777F8FDC259FE820533E33590 /* ZigZag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F870922F45437644360E83F54FE59D03 /* Sources */ = {
+		99E0ED2F500D60B8C2D56B8FCDD94725 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA8C92C69BA489A38C0184E70FA29335 /* Pods-LocTracker-dummy.m in Sources */,
+				AC67357DAC49A588A788ADD1C5052F43 /* Pods-LocTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6AC3C52BA6047C231DFC035F0C70843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E583BE0A9E7C75E19EB93AA4C3EB59 /* AZSAccessCondition.m in Sources */,
+				66AAC8F29765B5B8A7167D9F0A1D8E7D /* AZSBlobContainerProperties.m in Sources */,
+				104B35E3DF2C188BBE089C5C532970DC /* AZSBlobOutputStream.m in Sources */,
+				648CFE93C7BD95EA6611E1C6D2E94A45 /* AZSBlobProperties.m in Sources */,
+				727490021CA24EF20BCBD0E5E2C84B03 /* AZSBlobRequestFactory.m in Sources */,
+				C0F7A17B540CD6565A7235E7B9F3036F /* AZSBlobRequestOptions.m in Sources */,
+				339B8846C50C9F60B9E622308FEF3256 /* AZSBlobRequestXML.m in Sources */,
+				F6B4B72D72FB901040F7E8BCAA45D832 /* AZSBlobResponseParser.m in Sources */,
+				DBDB542AD3D8B237019EFD5434924F8E /* AZSBlobUploadHelper.m in Sources */,
+				0E0141B9C0489F28575E7C8FCBAB2D55 /* AZSBlockListItem.m in Sources */,
+				5BD8769423EEA42592D24A46FC79D93D /* AZSClient-dummy.m in Sources */,
+				A51A797482450BBE8860AAC0157B4C89 /* AZSClient.m in Sources */,
+				0D06435B32F42381035774D98BA75937 /* AZSCloudAppendBlob.m in Sources */,
+				7AA88E65DBC625DBB9585A363E5D9EB1 /* AZSCloudBlob.m in Sources */,
+				C10B6D9A67F69822D600B89218C166D3 /* AZSCloudBlobClient.m in Sources */,
+				4C1DB50077CC2C855F6CE5B2084831FD /* AZSCloudBlobContainer.m in Sources */,
+				ED338444568CDE238CD644A7AF8B9B55 /* AZSCloudBlobDirectory.m in Sources */,
+				B0E3DB1229BEEF5B3823CADB1D24EFA5 /* AZSCloudBlockBlob.m in Sources */,
+				4536742B0245A1CC1245126DD9E50866 /* AZSCloudClient.m in Sources */,
+				7BE3541814E006C88A68BA2840419B1A /* AZSCloudPageBlob.m in Sources */,
+				20ECFC9C84635F4F4E630A6390561A59 /* AZSCloudStorageAccount.m in Sources */,
+				57A930A2DAD6788718D5AF99D1E667B2 /* AZSConstants.m in Sources */,
+				896F19A3A74D1449AB335E4F04836D1C /* AZSContinuationToken.m in Sources */,
+				46171B299ADF6817DE94F8FF9B2C1E91 /* AZSCopyState.m in Sources */,
+				282E63764B2ED49E72296317B5515811 /* AZSCorsRule.m in Sources */,
+				18A7BCC6E14C2F6D3A66C12275C4F3AC /* AZSErrors.m in Sources */,
+				8044266EBC027564B1D047D011A183C8 /* AZSExecutor.m in Sources */,
+				7AD718C3D4815CEDF6F8C81799F24E4E /* AZSIPRange.m in Sources */,
+				A1705D12C3B0E3683FEEC3EC8D154EC6 /* AZSLoggingProperties.m in Sources */,
+				A2D8F7809D403E05D9A7510BFB225991 /* AZSMetricsProperties.m in Sources */,
+				6AE67CF92E6AE9DD087604236275327F /* AZSNavigationUtil.m in Sources */,
+				03E20C8F7FADD8F691F2DEC4BA8D0C18 /* AZSNoOpAuthenticationHandler.m in Sources */,
+				C939666FD59203A5EDD9F395CEC7D1C0 /* AZSOperationContext.m in Sources */,
+				F885F448166D263C11859643B61C30E3 /* AZSRequestFactory.m in Sources */,
+				292029A1991FE7D3C34DEF8A27ECEB61 /* AZSRequestOptions.m in Sources */,
+				1224C9ECFC2BEA444E30D3206A640CC0 /* AZSRequestResult.m in Sources */,
+				C61558644AA43C3DC8AC2CA57BA05452 /* AZSResponseParser.m in Sources */,
+				EB7534B03B683D7DF58BC43535B756E0 /* AZSResultSegment.m in Sources */,
+				BCA34F63DF8F22B2DE0896A3A42245A4 /* AZSRetryContext.m in Sources */,
+				355B94FE485DC458D4DF6DFDDCD2649F /* AZSRetryInfo.m in Sources */,
+				77BC0D697493DBFBE2C7CECC689C6A6F /* AZSRetryPolicy.m in Sources */,
+				D78CC90AFA0FFC3FC5C3560D60BE3BC6 /* AZSServiceProperties.m in Sources */,
+				A63AB3153C67531B26E9190CFAD19FA9 /* AZSSharedAccessAccountParameters.m in Sources */,
+				AE96F073113DAD62C26932E5EEFBACB6 /* AZSSharedAccessBlobParameters.m in Sources */,
+				411179808F6BCA635F50D9AC3ACFA903 /* AZSSharedAccessHeaders.m in Sources */,
+				40DC8A07D3523D8C7940F5E6D70723C3 /* AZSSharedAccessPolicy.m in Sources */,
+				5B23B804E921F66453F78745272A5C7A /* AZSSharedAccessSignatureHelper.m in Sources */,
+				027E057F62F4E3A311350588A26AECCA /* AZSSharedKeyBlobAuthenticationHandler.m in Sources */,
+				938D1829492AB3708B4FC4E62FF6A286 /* AZSStorageCommand.m in Sources */,
+				BA416103C38330DA80CC72433207ECEE /* AZSStorageCredentials.m in Sources */,
+				2B636E42353B26323D5BE51891846AC0 /* AZSStorageUri.m in Sources */,
+				BE6826DE1AA42F1CEE6E85DC54D5906E /* AZSUriQueryBuilder.m in Sources */,
+				1E8BD21C7482E8D05F0035C5B9A3E005 /* AZSUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		129B1339F722E6C568C6B267DAFFF7CE /* PBXTargetDependency */ = {
+		6204149BEB8C2B1B669DCAE7A6E79164 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftProtobuf;
-			target = DC0E8033208D535FDB87E53C6CACFD4E /* SwiftProtobuf */;
-			targetProxy = CAD9872B4151DE86958007B24D1DB97A /* PBXContainerItemProxy */;
+			target = 7F5150F09A859E62A1003B091A565131 /* SwiftProtobuf */;
+			targetProxy = 0C978942F86B0F418D63523AEAF2DC75 /* PBXContainerItemProxy */;
+		};
+		F286507F70DA0BC00C0A9C60DD824F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AZSClient;
+			target = B057C33533B34EC4EA0116CE0025C20A /* AZSClient */;
+			targetProxy = CD6FF4DE0C67D353D7A75607DB8066D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -640,7 +1163,38 @@
 			};
 			name = Release;
 		};
-		456DF9D0D83CC5B8910928B85796A791 /* Release */ = {
+		2C3FE10B117A8D4E7F4E87890216EFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E24CDF0F49FB55A5636C8CB814B050D /* SwiftProtobuf.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftProtobuf/SwiftProtobuf-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftProtobuf/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftProtobuf/SwiftProtobuf.modulemap";
+				PRODUCT_NAME = SwiftProtobuf;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		596B294054C4593A8852E1498CB5E54E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87A651E3050E7A53781814010302AB14 /* Pods-LocTracker.release.xcconfig */;
 			buildSettings = {
@@ -674,9 +1228,39 @@
 			};
 			name = Release;
 		};
-		4763F35CD52B876071C76F33E6B1CD70 /* Release */ = {
+		8D485C474C90B87DEC44B69521791EB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A29678154935338481EA34A17A6379 /* SwiftProtobuf.xcconfig */;
+			baseConfigurationReference = 6267FEEEE23FE5537B83CDD5E8CB3AC9 /* AZSClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSClient/AZSClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZSClient/AZSClient.modulemap";
+				PRODUCT_NAME = AZSClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AB9A91814255D792A1905B4124A8A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E24CDF0F49FB55A5636C8CB814B050D /* SwiftProtobuf.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -706,38 +1290,7 @@
 			};
 			name = Release;
 		};
-		8E7CBEAD271C1698D38B1C738DCA51EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A29678154935338481EA34A17A6379 /* SwiftProtobuf.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftProtobuf/SwiftProtobuf-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftProtobuf/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftProtobuf/SwiftProtobuf.modulemap";
-				PRODUCT_NAME = SwiftProtobuf;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A62569AFE64A56C60CD5458B77C82D3C /* Debug */ = {
+		A18118950DC573AA605E0CA1EC03119B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F296B8E50136DA444CF54CCF86E0BA6B /* Pods-LocTracker.debug.xcconfig */;
 			buildSettings = {
@@ -770,6 +1323,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C1C6E72C032FAFB74287B619B636D7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6267FEEEE23FE5537B83CDD5E8CB3AC9 /* AZSClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSClient/AZSClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZSClient/AZSClient.modulemap";
+				PRODUCT_NAME = AZSClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -837,15 +1421,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22AC2EE7EB3566EDD9FCDFDC6301EDB4 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E7CBEAD271C1698D38B1C738DCA51EC /* Debug */,
-				4763F35CD52B876071C76F33E6B1CD70 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -855,11 +1430,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E0177D7DCBFD8A44C82C70CBDD621DA /* Build configuration list for PBXNativeTarget "Pods-LocTracker" */ = {
+		30BC44DBEB979368D397FF1245811882 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A62569AFE64A56C60CD5458B77C82D3C /* Debug */,
-				456DF9D0D83CC5B8910928B85796A791 /* Release */,
+				2C3FE10B117A8D4E7F4E87890216EFC1 /* Debug */,
+				9AB9A91814255D792A1905B4124A8A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609744BB8691FD50103D7B3692A6D7C1 /* Build configuration list for PBXNativeTarget "Pods-LocTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18118950DC573AA605E0CA1EC03119B /* Debug */,
+				596B294054C4593A8852E1498CB5E54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CE9657EDEA890460433536A063ED31 /* Build configuration list for PBXNativeTarget "AZSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D485C474C90B87DEC44B69521791EB0 /* Debug */,
+				C1C6E72C032FAFB74287B619B636D7E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
