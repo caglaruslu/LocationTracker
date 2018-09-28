@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39876F460FE846174733DE86 /* Pods_LocTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBF562DDF12AD2105D36C55 /* Pods_LocTracker.framework */; };
+		A1AB5C61215E6C4B00E3A58A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1AB5C5F215E6C4B00E3A58A /* Model.xcdatamodeld */; };
 		A1C94EC2215A664300D0DD38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C94EC1215A664300D0DD38 /* AppDelegate.swift */; };
 		A1C94EC4215A664300D0DD38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C94EC3215A664300D0DD38 /* ViewController.swift */; };
 		A1C94EC7215A664300D0DD38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C94EC5215A664300D0DD38 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		369B20315BC945E854AEEC70 /* Pods-LocTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocTracker/Pods-LocTracker.release.xcconfig"; sourceTree = "<group>"; };
 		96D0AF3A3C9F5BBAA80FC374 /* Pods-LocTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocTracker/Pods-LocTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AB5C3D215BCEFC00E3A58A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		A1AB5C60215E6C4B00E3A58A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A1C94EBE215A664300D0DD38 /* LocTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C94EC1215A664300D0DD38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C94EC3215A664300D0DD38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				A1C94EC1215A664300D0DD38 /* AppDelegate.swift */,
 				A1C94EC3215A664300D0DD38 /* ViewController.swift */,
+				A1AB5C5F215E6C4B00E3A58A /* Model.xcdatamodeld */,
 				A1C94ED7215AB2C300D0DD38 /* unitfile.pb.swift */,
 				A1C94EC5215A664300D0DD38 /* Main.storyboard */,
 				A1C94EC8215A664500D0DD38 /* Assets.xcassets */,
@@ -226,6 +229,7 @@
 				A1C94EC4215A664300D0DD38 /* ViewController.swift in Sources */,
 				A1C94ED8215AB2C300D0DD38 /* unitfile.pb.swift in Sources */,
 				A1C94EC2215A664300D0DD38 /* AppDelegate.swift in Sources */,
+				A1AB5C61215E6C4B00E3A58A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +433,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1AB5C5F215E6C4B00E3A58A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1AB5C60215E6C4B00E3A58A /* Model.xcdatamodel */,
+			);
+			currentVersion = A1AB5C60215E6C4B00E3A58A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1C94EB6215A664300D0DD38 /* Project object */;
 }

@@ -205,7 +205,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         container.listBlobsSegmented(with: nil, prefix: nil, useFlatBlobListing: false, blobListingDetails: AZSBlobListingDetails(), maxResults: 50) { (error : Error?, results : AZSBlobResultSegment?) -> Void in
             
             if error != nil {
-                print("2   " + error!.localizedDescription)
+                print("** ERROR: couldnt reload blob list   " + error!.localizedDescription)
             }else{
                 self.blobs = [AZSCloudBlob]()
                 
