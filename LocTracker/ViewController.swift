@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -23,6 +24,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var blobs = [AZSCloudBlob]()
     var container : AZSCloudBlobContainer
     var continuationToken : AZSContinuationToken?
+    
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         
         
+        
         // Check location authorization status
         
         let status  = CLLocationManager.authorizationStatus()
@@ -57,6 +60,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         reloadBlobList()
+        synchPreviousRecords()
         
     }
     
@@ -85,9 +89,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
         setUnitFile()
         
-        saveDataToDisc {
-            self.sendDataToServer()
-        }
+        saveDataAndSendDataToServer()
         
     }
     
@@ -164,17 +166,38 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         return intGMT
     }
     
-    func sendDataToServer(){
+    func saveDataAndSendDataToServer(){
         
         do{
+            
+            // SERIALIZE DATA
+            
             let binaryData: Data = try unitFile.serializedData()
+            
+            // CORE DATA STUFF
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let coreUnitFile = NSEntityDescription.insertNewObject(forEntityName: "UnitFileData", into: context)
+            coreUnitFile.setValue(binaryData, forKey: "binData")
+            do{
+                try context.save()
+                print("Binary Data saved to Core Data")
+            }catch{
+                print("** ERROR: Binary Data couldnt be saved to Core Data")
+            }
+            
+            ////////////////////
             
             
             let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
             blob.upload(from: binaryData) { (err) in
                 if err != nil{
+                    coreUnitFile.setValue(false, forKey: "synched")
                     print(err!.localizedDescription)
                 }else{
+                    coreUnitFile.setValue(true, forKey: "synched")
                     print("UPLOADED")
                 }
             }
@@ -184,16 +207,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             print("** ERROR: couldnt build binary data")
         }
         
-        
-//        let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
-//        blob.upload(fromText: "deneme") { (err) in
-//            if err != nil{
-//                print(err!.localizedDescription)
-//            }else{
-//                print("UPLOADED")
-//            }
-//
-//        }
         
     }
     
@@ -214,7 +227,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 {
                     self.blobs.append(blob as! AZSCloudBlob)
                     let newBlob: AZSCloudBlob = blob as! AZSCloudBlob
-                    print(newBlob.blobName)
+                    print("blob name: " + newBlob.blobName)
                     print("counter: " + "\(self.blobs.count)")
                 }
                 
@@ -226,16 +239,68 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    
-    func saveDataToDisc(completion: () -> ()){
+    func synchPreviousRecords(){
         
-        // data saving process
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
         
-        // data saved
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "UnitFileData")
         
-        completion()
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            
+            let results = try context.fetch(request)
+            
+            if results.count > 0 {
+                
+                for result in results as! [NSManagedObject] {
+                    
+                    if let synched = result.value(forKey: "synched") as? Bool {
+                        
+                        if !synched {
+                            
+                            // try uploading again
+                            
+                            if let binData = result.value(forKey: "binData") as? Data{
+                                let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+                                blob.upload(from: binData) { (err) in
+                                    if err != nil{
+                                        print(err!.localizedDescription)
+                                    }else{
+                                        
+                                        do{
+                                            print("UPDATED")
+                                            result.setValue(true, forKey: "synched")
+                                            try context.save()
+                                        }catch{
+                                            print("** ERROR: binary data couldnt be updated")
+                                        }
+                                        
+                                        
+                                        print("UPLOADED")
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }catch{
+            
+            print("** ERROR: binary data couldnt be fetched from core data")
+            
+        }
         
     }
+    
+    
+    
     
     
 }
