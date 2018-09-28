@@ -125,32 +125,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Set locData
         
-        let locData = ProtoFiles_LocData()
+        
         let lat = Float(lastLocation.coordinate.latitude)
         let lon = Float(lastLocation.coordinate.longitude)
         let speed = Float(lastLocation.speed)
         let timestamp = lastLocation.timestamp.timeIntervalSince1970 // Time interval since 1970 ***
-        setLocData(lat: lat, lon: lon, speed: speed, timestamp: timestamp)
+        let locData = setLocData(lat: lat, lon: lon, speed: speed, timestamp: timestamp)
         
         
         //Append UnitFile by current LocData
         
         unitFile.locData.append(locData)
         
+        
+        
     }
     
-    func setLocData(lat: Float, lon: Float, speed: Float, timestamp: Double){
+    func setLocData(lat: Float, lon: Float, speed: Float, timestamp: Double) -> ProtoFiles_LocData{
         var locData = ProtoFiles_LocData()
         locData.latitude = lat
         locData.longitude = lon
         locData.speed = speed
         locData.timestamp = timestamp
+        return locData
     }
     
     func setUnitFile(){
         unitFile.startTime = (unitFile.locData.first?.timestamp)!
         unitFile.endTime = (unitFile.locData.last?.timestamp)!
         unitFile.timezoneoffset = setGMT()
+        
     }
     
     func setGMT() -> Int32 {
@@ -162,15 +166,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func sendDataToServer(){
         
-        let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
-        blob.upload(fromText: "deneme") { (err) in
-            if err != nil{
-                print(err!.localizedDescription)
-            }else{
-                print("UPLOADED")
+        do{
+            let binaryData: Data = try unitFile.serializedData()
+            
+            
+            let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+            blob.upload(from: binaryData) { (err) in
+                if err != nil{
+                    print(err!.localizedDescription)
+                }else{
+                    print("UPLOADED")
+                }
             }
             
+            
+        }catch{
+            print("** ERROR: couldnt build binary data")
         }
+        
+        
+//        let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+//        blob.upload(fromText: "deneme") { (err) in
+//            if err != nil{
+//                print(err!.localizedDescription)
+//            }else{
+//                print("UPLOADED")
+//            }
+//
+//        }
         
     }
     
