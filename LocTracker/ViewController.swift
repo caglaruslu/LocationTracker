@@ -9,8 +9,9 @@
 import UIKit
 import CoreLocation
 import CoreData
+import CoreMotion
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResultsControllerDelegate {
     
     
     // Declare variables and constants
@@ -18,14 +19,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var startStopButton: UIButton!
     let locationManager = CLLocationManager()
     var unitFile = ProtoFiles_UnitFile()
+    var locData = ProtoFiles_LocData()
     
-    var containerURL = "https://drivebuddy.blob.core.windows.net/testere?spr=https&sr=c&sp=rwdl&sv=2017-07-29&sig=46YvUTugp6ah8JSTmqPHuC19sZkYTyIop43VOBsOGxU%3D&se=2018-09-27T10%3A36%3A46Z"
+    var containerURL = "https://drivebuddy.blob.core.windows.net/testere?sp=rwdl&sr=c&sig=BdWX/DBW%2ByiBQmgRzi8nNsi8luVMCAHGt1H%2BAwdDsuA%3D&spr=https&sv=2017-07-29&se=2018-09-30T11%3A09%3A06Z"
     
     var blobs = [AZSCloudBlob]()
     var container : AZSCloudBlobContainer
     var continuationToken : AZSContinuationToken?
     
-    
+    var motionManager = CMMotionManager()
     
     required init?(coder aDecoder: NSCoder) {
         
@@ -43,6 +45,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        deleteCoreDataObjects()
         
         
         // Set delegates
@@ -82,10 +86,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func beginLocationTracking(){
         unitFile = ProtoFiles_UnitFile()
+        measureAcceleration()
         startReceivingLocationChanges()
     }
     
     func stopLocationTracking(){
+        stopMeasuringAcceleration()
         locationManager.stopUpdatingLocation()
         setUnitFile()
         
@@ -117,6 +123,35 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+    func measureAcceleration(){
+        
+        motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
+            if let myData = data{
+                
+                let accX = myData.acceleration.x
+                let accY = myData.acceleration.y
+                let accZ = myData.acceleration.z
+                
+                let timestp = Date().timeIntervalSince1970
+                
+                var accData = ProtoFiles_AccData()
+                accData.timestamp = timestp
+                accData.x = Float(accX)
+                accData.y = Float(accY)
+                accData.z = Float(accZ)
+                self.locData.accData.append(accData)
+            }
+        }
+        
+    }
+    
+    func stopMeasuringAcceleration(){
+        
+        motionManager.stopAccelerometerUpdates()
+        
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
         
         
@@ -127,29 +162,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Set locData
         
+        locData.latitude = Float(lastLocation.coordinate.latitude)
+        locData.longitude = Float(lastLocation.coordinate.longitude)
+        locData.speed = Float(lastLocation.speed)
+        locData.timestamp = lastLocation.timestamp.timeIntervalSince1970 // Time interval since 1970 ***
         
-        let lat = Float(lastLocation.coordinate.latitude)
-        let lon = Float(lastLocation.coordinate.longitude)
-        let speed = Float(lastLocation.speed)
-        let timestamp = lastLocation.timestamp.timeIntervalSince1970 // Time interval since 1970 ***
-        let locData = setLocData(lat: lat, lon: lon, speed: speed, timestamp: timestamp)
+        if locData.accData.count > 0 {
+            unitFile.locData.append(locData)
+        }
         
-        
-        //Append UnitFile by current LocData
-        
-        unitFile.locData.append(locData)
-        
-        
-        
-    }
-    
-    func setLocData(lat: Float, lon: Float, speed: Float, timestamp: Double) -> ProtoFiles_LocData{
-        var locData = ProtoFiles_LocData()
-        locData.latitude = lat
-        locData.longitude = lon
-        locData.speed = speed
-        locData.timestamp = timestamp
-        return locData
+        locData.accData.removeAll()
     }
     
     func setUnitFile(){
@@ -172,6 +194,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             // SERIALIZE DATA
             
+            print(unitFile)
+            
             let binaryData: Data = try unitFile.serializedData()
             
             // CORE DATA STUFF
@@ -191,7 +215,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             ////////////////////
             
             
-            let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+            let blob = container.blockBlobReference(fromName: "caglar-\(NSDate().timeIntervalSince1970)")
             blob.upload(from: binaryData) { (err) in
                 if err != nil{
                     coreUnitFile.setValue(false, forKey: "synched")
@@ -227,8 +251,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 {
                     self.blobs.append(blob as! AZSCloudBlob)
                     let newBlob: AZSCloudBlob = blob as! AZSCloudBlob
-                    print("blob name: " + newBlob.blobName)
+                    print("blob name: " + newBlob.blobName + "  URL: " + newBlob.storageUri.primaryUri.absoluteString)
                     print("counter: " + "\(self.blobs.count)")
+                    
+//                    let blobWillBeRemoved = self.container.blockBlobReference(fromName: "caglar-1538225262.5781")
+//                    blobWillBeRemoved.delete(completionHandler: { (error) in
+//                        if error != nil{
+//                            print("** ERROR: Blob couldnt be deleted")
+//                        }else{
+//                            print("blob deleted")
+//                        }
+//                    })
+                    
                 }
                 
                 self.continuationToken = results!.continuationToken
@@ -263,7 +297,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             // try uploading again
                             
                             if let binData = result.value(forKey: "binData") as? Data{
-                                let blob = container.blockBlobReference(fromName: "testere-\(NSDate().timeIntervalSince1970)")
+                                let blob = container.blockBlobReference(fromName: "caglar-\(NSDate().timeIntervalSince1970)")
                                 blob.upload(from: binData) { (err) in
                                     if err != nil{
                                         print(err!.localizedDescription)
@@ -300,6 +334,46 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+    func deleteCoreDataObjects(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "UnitFileData")
+        
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            
+            let results = try context.fetch(request)
+            
+            if results.count > 0 {
+                
+                print("\(results.count)" + " core data objects")
+                
+                for result in results as! [NSManagedObject] {
+                    
+                    context.delete(result)
+                    do{
+                        try context.save()
+                    }catch{
+                        
+                    }
+                    
+                    
+                }
+                
+            }else{
+                print("NO CORE DATA ITEM")
+            }
+            
+        }catch{
+            
+            print("** ERROR: binary data couldnt be fetched from core data")
+            
+        }
+        
+    }
     
     
     
