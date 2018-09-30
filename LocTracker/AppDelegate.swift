@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        application.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        
         return true
     }
 
@@ -84,7 +86,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        guard let data = fetchSomeData() else {
+            // data download failed
+            completionHandler(.failed)
+            return
+        }
+        
+        if data == "newData" {
+            // data download succeeded and is new
+            completionHandler(.newData)
+        } else {
+            // data downloaded succeeded and is not new
+            completionHandler(.noData)
+        }
+    }
+    
+    func fetchSomeData() -> String? {
+        
+        let str: String? = "newData"
+        return str
+    }
+    
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
 

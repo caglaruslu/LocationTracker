@@ -1,15 +1,18 @@
 PODS:
   - AZSClient (0.2.6)
+  - ReachabilitySwift (4.1.0)
   - SwiftProtobuf (1.0.3)
 
 DEPENDENCIES:
   - AZSClient
+  - ReachabilitySwift
   - SwiftProtobuf (~> 1.0)
 
 SPEC CHECKSUMS:
   AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
 
-PODFILE CHECKSUM: 41b07826741bb3d04917487e627acc6cb521545e
+PODFILE CHECKSUM: a69ff3ba36496a7d24275a8721725cdfff5e897c
 
 COCOAPODS: 1.4.0

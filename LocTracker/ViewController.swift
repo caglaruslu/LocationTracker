@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import CoreData
 import CoreMotion
+import Reachability
 
 class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResultsControllerDelegate {
     
@@ -26,6 +27,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
     var blobs = [AZSCloudBlob]()
     var container : AZSCloudBlobContainer
     var continuationToken : AZSContinuationToken?
+    
     
     var motionManager = CMMotionManager()
     
@@ -48,12 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
         
 //        deleteCoreDataObjects()
         
-        
-        // Set delegates
-        
         locationManager.delegate = self
-        
-        
         
         // Check location authorization status
         
@@ -63,10 +60,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             return
         }
         
-        reloadBlobList()
-        synchPreviousRecords()
+        
+        
+//        reloadBlobList()
+        
+        checkConnection {
+            self.synchPreviousRecords()
+        }
+        
         
     }
+    
     
     
     @IBAction func startStopButtonPressed(_ sender: Any) {
@@ -194,7 +198,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             
             // SERIALIZE DATA
             
-            print(unitFile)
             
             let binaryData: Data = try unitFile.serializedData()
             
@@ -205,6 +208,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             
             let coreUnitFile = NSEntityDescription.insertNewObject(forEntityName: "UnitFileData", into: context)
             coreUnitFile.setValue(binaryData, forKey: "binData")
+            coreUnitFile.setValue(false, forKey: "synched")
             do{
                 try context.save()
                 print("Binary Data saved to Core Data")
@@ -219,9 +223,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             blob.upload(from: binaryData) { (err) in
                 if err != nil{
                     coreUnitFile.setValue(false, forKey: "synched")
-                    print(err!.localizedDescription)
+                    do{
+                        try context.save()
+                        print("synched false saved to Core Data")
+                    }catch{
+                        print("** ERROR: synched false couldnt be saved to Core Data")
+                    }
+//                    print(err!.localizedDescription)
+                    
                 }else{
                     coreUnitFile.setValue(true, forKey: "synched")
+                    do{
+                        try context.save()
+                        print("synched true saved to Core Data")
+                    }catch{
+                        print("** ERROR: synched true couldnt be saved to Core Data")
+                    }
                     print("UPLOADED")
                 }
             }
@@ -242,7 +259,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
         container.listBlobsSegmented(with: nil, prefix: nil, useFlatBlobListing: false, blobListingDetails: AZSBlobListingDetails(), maxResults: 50) { (error : Error?, results : AZSBlobResultSegment?) -> Void in
             
             if error != nil {
-                print("** ERROR: couldnt reload blob list   " + error!.localizedDescription)
+//                print("** ERROR: couldnt reload blob list   " + error!.localizedDescription)
+                print("ERROR reloading blob list")
             }else{
                 self.blobs = [AZSCloudBlob]()
                 
@@ -288,9 +306,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             
             if results.count > 0 {
                 
+                print("\(results.count)" + " core data objects")
+                
                 for result in results as! [NSManagedObject] {
                     
+                    
                     if let synched = result.value(forKey: "synched") as? Bool {
+                        
+                        print(synched)
                         
                         if !synched {
                             
@@ -300,7 +323,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
                                 let blob = container.blockBlobReference(fromName: "caglar-\(NSDate().timeIntervalSince1970)")
                                 blob.upload(from: binData) { (err) in
                                     if err != nil{
-                                        print(err!.localizedDescription)
+//                                        print(err!.localizedDescription)
+                                        print("ERROR uploading blob")
                                     }else{
                                         
                                         do{
@@ -319,6 +343,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
                             
                         }
                         
+                    }else{
+                        print("SYNCHED NOT FOUND")
                     }
                     
                 }
@@ -371,6 +397,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NSFetchedResu
             
             print("** ERROR: binary data couldnt be fetched from core data")
             
+        }
+        
+    }
+    
+    
+    func checkConnection(completion: @escaping () -> ()){
+        
+        let reachability = Reachability()!
+        
+        reachability.whenReachable = { reachability in
+            
+            print("Internet reachable")
+            
+            completion()
+        }
+        
+        reachability.whenUnreachable = { _ in
+            print("Internet unreachable")
+        }
+        
+        do{
+            try reachability.startNotifier()
+        } catch {
+            print("Could not start notifier")
         }
         
     }
